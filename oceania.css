@@ -1,0 +1,654 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navbar .nav .websitelogo {
+    margin-right: auto;
+    width: 40px;
+    height: 40px;
+}
+
+.navbar {
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: rgb(241, 250, 255);
+    position: fixed;
+    top: 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+    width: 100%;
+}
+.nav {
+    display: flex;
+    background-color: rgb(241, 250, 255);
+    align-items: center;
+}
+
+ .navbar .nav .desktopnav {
+    list-style-type: none;
+    width: 100%; 
+    padding-left: 10px;
+}
+
+.navbar .nav .desktopnav li {
+    display: inline;
+    padding: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar .nav li:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(148, 187, 208);
+    text-underline-offset: 5px;
+    text-decoration-thickness: 4px;
+    transition: 0.5s;
+}
+
+.navbar .nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .nav .dropbutton {
+    display: none;
+    margin-left: auto;
+    width: 110px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    background-color: rgb(241, 250, 255);
+    font-size: 16px;
+}
+
+.navbar .nav .dropbutton:hover {
+    background-color: rgb(203, 227, 240);
+    transition: 0.5s;
+}
+
+.navbar .nav .mobilemenu .mobilenav {
+    display: none;
+    min-width: 110px;
+    z-index: 1px;
+    background-color: rgb(241, 250, 255);
+    position: absolute;
+
+}
+
+.navbar .nav .mobilemenu:hover .mobilenav{
+    display: block;
+}
+
+.navbar .nav .mobilemenu .mobilenav li {
+    list-style-type: none;
+    padding: 10px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 18px;
+    margin-left: auto;
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar .nav a {
+    cursor: pointer;
+}
+
+.homeimage {
+    background-image: url("backgrounds/oceaniabackground.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    object-fit: cover;
+}
+
+.homeimage h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    text-shadow: black 4px 5px;
+    font-size: 9vw;
+}
+
+/* Popular Searches Header --------------------------------------------------------------------------------------------*/
+.popularsearches {
+    width: 100%;
+    background-color: rgb(248, 252, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-top: 5px solid rgb(36, 118, 165);
+}
+
+.popularsearches #myInput {
+  background-image: url("search_icon.png");
+  background-size: 1.2vw  1.2vw;
+  background-position: 10px 12px; 
+  background-repeat: no-repeat; 
+  width: 50%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px; 
+  border: 1px solid #ddd; 
+  margin-bottom: 12px; 
+  margin-top: 12px;
+}
+
+.popularsearches #populartitle {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal;
+    font-size: 6vw;
+    padding-top: 3vw;
+}
+
+.popularsearches #popularsubtitle {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    font-size: 1.5vw;
+    padding-top: 0.5vw;
+    padding-bottom: 1.5vw;
+    width: 50%;
+    text-align: center;
+}
+
+/*Country Boxes ------------------------------------------------------------------------------------------*/
+.popularsearches .countryboxes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.popularsearches .countryboxes .countrybox {
+    border: 10px solid rgb(36, 118, 165);
+    border-radius: 5px;
+    margin: 20px;
+    
+}
+
+.popularsearches .countryboxes .countrybox:hover {
+    box-shadow: 0px 0px 12px 0 rgba(0,0,0,.8);
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.popularsearches .countryboxes .countrybox .countryphotos {
+    width: 300px;
+    height: 300px;
+}
+
+.popularsearches .countryphotos {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.popularsearches .countryboxes .countrybox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(241, 250, 255);
+}
+
+.popularsearches .countryboxes .countrybox .countryinfo {
+    width: 260px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.popularsearches .countryboxes .countrybox .countryname {
+    padding-top: 10px;
+    font-size: 32px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: underline solid rgb(48, 154, 215);
+}
+
+.popularsearches .countryboxes #Bosnia .countryname{
+    font-size: 28px;
+    padding-bottom: 6px;
+}
+
+.popularsearches .countryboxes .countrybox button {
+    margin: 15px;
+    margin-top: 0;
+    border: none;
+    width: 90px;
+    height: 35px;
+    background-color: rgb(36, 118, 165);
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.popularsearches a {
+    text-decoration: underline white;
+    color: white;
+}
+
+/* Modal Designs -----------------------------------------------------------------------------------------------------------------------*/
+.modal {
+    display: none;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.modal .modalbox {
+    display: flex;
+    flex-direction: row;
+    margin: 10% 19.5% auto;
+    position: fixed;
+    width: 60%;
+    height: 60%;
+    background-color: rgb(241, 250, 255);
+    border: 10px solid rgb(36, 118, 165);
+    border-radius: 5px;
+    animation-name: modalopen;
+    animation-duration: 1s;
+
+}
+
+@keyframes modalopen {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.modal .modalbox .modalphoto {
+    width: 92%;
+    height: 90%;
+    margin: 2vw;
+}
+
+.modal .modalbox .modalphoto .photo {
+    width: 100%;
+    height: 80%;
+    border: 5px solid rgb(36, 118, 165);
+    background-size: cover;
+}
+
+.modal .modalbox .modalphoto .caption {
+    margin: 10px;
+    color: gray;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.modal .modalbox .modaltext {
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 27px;
+    margin: 30px;
+    margin-left: 7px;
+    text-align: center;
+    width: 70%;
+}
+
+.modal .modalbox .modaltext .modalparagraph {
+    margin-top: 20px;
+}
+
+.modal .closeButton {
+    float: right;
+    font-size: 50px;
+    color: white;
+    padding-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+/* Searches Photos + Hovers -------------------------------------------------------------------------*/
+.popularsearches #Australia .countryphotos {
+    background-image: url(oceaniaimages/australiasite.jpg);
+}
+.popularsearches #Australia .countryphotos:hover {
+    background-image: url(oceaniaimages/australiaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Fiji .countryphotos {
+    background-image: url(oceaniaimages/fijisite.jpg);
+}
+.popularsearches #Fiji .countryphotos:hover {
+    background-image: url(oceaniaimages/fijiflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Kiribati .countryphotos {
+    background-image: url(oceaniaimages/kiribatisite.jpg);
+}
+.popularsearches #Kiribati .countryphotos:hover {
+    background-image: url(oceaniaimages/kiribatiflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Marshall .countryphotos {
+    background-image: url(oceaniaimages/marshallsite.jpg);
+}
+.popularsearches #Marshall .countryphotos:hover {
+    background-image: url(oceaniaimages/marshallflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Micronesia .countryphotos {
+    background-image: url(oceaniaimages/micronesiasite.jpeg);
+}
+.popularsearches #Micronesia .countryphotos:hover {
+    background-image: url(oceaniaimages/micronesiaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Nauru .countryphotos {
+    background-image: url(oceaniaimages/naurusite.jpg);
+}
+.popularsearches #Nauru .countryphotos:hover {
+    background-image: url(oceaniaimages/nauruflag.png);
+    transition: 1s;
+}
+
+.popularsearches #NewZealand .countryphotos {
+    background-image: url(oceaniaimages/newzealandsite.jpg);
+}
+.popularsearches #NewZealand .countryphotos:hover {
+    background-image: url(oceaniaimages/newzealandflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Palau .countryphotos {
+    background-image: url(oceaniaimages/palausite.jpg);
+}
+.popularsearches #Palau .countryphotos:hover {
+    background-image: url(oceaniaimages/palauflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Papua .countryphotos {
+    background-image: url(oceaniaimages/papuasite.jpg);
+}
+.popularsearches #Papua .countryphotos:hover {
+    background-image: url(oceaniaimages/papuaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Samoa .countryphotos {
+    background-image: url(oceaniaimages/samoasite.jpg);
+}
+.popularsearches #Samoa .countryphotos:hover {
+    background-image: url(oceaniaimages/samoaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Solomon .countryphotos {
+    background-image: url(oceaniaimages/solomonsite.jpg);
+}
+.popularsearches #Solomon .countryphotos:hover {
+    background-image: url(oceaniaimages/solomonflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Tonga .countryphotos {
+    background-image: url(oceaniaimages/tongasite.jpg);
+}
+.popularsearches #Tonga .countryphotos:hover {
+    background-image: url(oceaniaimages/tongaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Tuvalu .countryphotos {
+    background-image: url(oceaniaimages/tuvalusite.jpg);
+}
+.popularsearches #Tuvalu .countryphotos:hover {
+    background-image: url(oceaniaimages/tuvaluflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Vanuatu .countryphotos {
+    background-image: url(oceaniaimages/vanuatusite.jpg);
+}
+.popularsearches #Vanuatu .countryphotos:hover {
+    background-image: url(oceaniaimages/vanuatuflag.png);
+    transition: 1s;
+}
+
+/*Modal Images --------------------------------------------------------------------------------------------------*/
+.popularsearches #AustraliaModal .modalbox .modalphoto .photo {
+    background-image: url(oceaniaimages/australiasite.jpg);
+}
+.popularsearches #AustraliaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(oceaniaimages/australiaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #FijiModal .modalbox .modalphoto .photo {
+    background-image: url(oceaniaimages/fijisite.jpg);
+}
+.popularsearches #FijiModal .modalbox .modalphoto .photo:hover {
+    background-image: url(oceaniaimages/fijiflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #KiribatiModal .modalbox .modalphoto .photo {
+    background-image: url(oceaniaimages/kiribatisite.jpg);
+}
+.popularsearches #KiribatiModal .modalbox .modalphoto .photo:hover {
+    background-image: url(oceaniaimages/kiribatiflag.png);
+    transition: 1s;
+}
+
+.popularsearches #MarshallModal .modalbox .modalphoto .photo {
+    background-image: url(oceaniaimages/marshallsite.jpg);
+}
+.popularsearches #MarshallModal .modalbox .modalphoto .photo:hover {
+    background-image: url(oceaniaimages/marshallflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #MicronesiaModal .modalbox .modalphoto .photo {
+    background-image: url(oceaniaimages/micronesiasite.jpeg);
+}
+.popularsearches #MicronesiaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(oceaniaimages/micronesiaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #NauruModal .modalbox .modalphoto .photo {
+    background-image: url(oceaniaimages/naurusite.jpg);
+}
+.popularsearches #NauruModal .modalbox .modalphoto .photo:hover {
+    background-image: url(oceaniaimages/nauruflag.png);
+    transition: 1s;
+}
+
+.popularsearches #NewZealandModal .modalbox .modalphoto .photo {
+    background-image: url(oceaniaimages/newzealandsite.jpg);
+}
+.popularsearches #NewZealandModal .modalbox .modalphoto .photo:hover {
+    background-image: url(oceaniaimages/newzealandflag.png);
+    transition: 1s;
+}
+
+.popularsearches #PalauModal .modalbox .modalphoto .photo {
+    background-image: url(oceaniaimages/palausite.jpg);
+}
+.popularsearches #PalauModal .modalbox .modalphoto .photo:hover {
+    background-image: url(oceaniaimages/palauflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #PapuaModal .modalbox .modalphoto .photo {
+    background-image: url(oceaniaimages/papuasite.jpg);
+}
+.popularsearches #PapuaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(oceaniaimages/papuaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #SamoaModal .modalbox .modalphoto .photo {
+    background-image: url(oceaniaimages/samoasite.jpg);
+}
+.popularsearches #SamoaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(oceaniaimages/samoaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #SolomonModal .modalbox .modalphoto .photo {
+    background-image: url(oceaniaimages/solomonsite.jpg);
+}
+.popularsearches #SolomonModal .modalbox .modalphoto .photo:hover {
+    background-image: url(oceaniaimages/solomonflag.png);
+    transition: 1s;
+}
+
+.popularsearches #TongaModal .modalbox .modalphoto .photo {
+    background-image: url(oceaniaimages/tongasite.jpg);
+}
+.popularsearches #TongaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(oceaniaimages/tongaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #TuvaluModal .modalbox .modalphoto .photo {
+    background-image: url(oceaniaimages/tuvalusite.jpg);
+}
+.popularsearches #TuvaluModal .modalbox .modalphoto .photo:hover {
+    background-image: url(oceaniaimages/tuvaluflag.png);
+    transition: 1s;
+}
+
+.popularsearches #VanuatuModal .modalbox .modalphoto .photo {
+    background-image: url(oceaniaimages/vanuatusite.jpg);
+}
+.popularsearches #VanuatuModal .modalbox .modalphoto .photo:hover {
+    background-image: url(oceaniaimages/vanuatuflag.png);
+    transition: 1s;
+}
+
+/*Random Generator Design*/
+.generators {
+    background-color: rgb(139, 191, 220);
+    box-shadow: 
+        inset 0px 11px 8px -6px rgb(99, 156, 187),
+        inset 0px -11px 8px -6px rgb(99, 156, 187); 
+    border-bottom: 5px solid rgb(36, 118, 165);
+    border-top: 5px solid rgb(36, 118, 165);
+}
+
+.generators .randomCountry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.generators h1 {
+    font-size: 3vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline solid rgb(72, 157, 206);
+    text-align: center;
+}
+
+.generators p {
+    font-size: 1.5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 40%;
+    text-align: center;
+    margin: 1.5vw;
+}
+
+.generators #randomButton {
+    border: none;
+    padding: 1.4vw;
+    color: black;
+    background-color: rgb(236, 248, 255);
+    font-size: 1.3vw;
+    border-radius: 7px;
+}
+
+.generators #randomButton:hover {
+    background-color: rgb(228, 245, 255);
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .navbar .nav .desktopnav {
+        display: none;
+    }
+    .navbar .nav .mobilemenu .dropbutton {
+        display: block;
+        margin-right: 15px;
+    }
+
+    .homeimage {
+        width: 100%;
+        height: 300px;
+    }
+    .homeimage .title {
+        text-shadow: black 2px 3px;
+    }
+
+    .popularsearches #populartitle {
+        font-size: 7vw;
+    }
+    .popularsearches #popularsubtitle {
+        font-size: 3vw;
+    }
+
+    .modal .modalbox {
+        flex-direction: column;
+        width: 80%;
+        height: 90%;
+        margin: 11% 8% auto;
+    }
+
+    .modal .modalbox .modalphoto {
+        height: 50%;
+        margin-bottom: 10px;
+    }
+
+    .modal .modalbox .modaltext {
+        margin-top: 0;
+        font-size: 13px;
+        line-height: 18px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+    .modal .modalbox .modalphoto .caption {
+        margin: 5px;
+        color: gray;
+        font-style: italic;
+        font-size: 9px;
+    }
+
+    .generators {
+        flex-direction: column;
+    }
+    .generators h1 {
+        font-size: 7vw;
+    }
+    .generators p {
+        font-size: 5vw;
+        width: 80%;
+        margin: 6vw;
+    }
+    .generators #randomButton {
+        padding: 5vw;
+        font-size: 4vw;
+    }
+
+}

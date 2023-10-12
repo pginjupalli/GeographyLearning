@@ -1,0 +1,504 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="oceania.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <title>Oceania</title>
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <section class="navbar">
+            <div class="nav">
+                <img src="globe-icon.png" class=websitelogo>
+                <!-- Navigation Bar when fully expanded -->
+                <ul class="desktopnav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="northamerica.html">North America</a></li>
+                    <li><a href="southamerica.html">South America</a></li>
+                    <li><a href="europe.html">Europe</a></li>
+                    <li><a href="africa.html">Africa</a></li>
+                    <li><a href="asia.html">Asia</a></li>
+                    <li><a href="oceania.html">Oceania</a></li>
+                </ul>
+    
+                <!-- Navigation bar when window is small -->
+                <div class="mobilemenu">
+                    <button class=dropbutton> Continents ▾</button>
+                    <ul class="mobilenav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="northamerica.html">N. America</a></li>
+                        <li><a href="southamerica.html">S. America</a></li>
+                        <li><a href="europe.html">Europe</a></li>
+                        <li><a href="africa.html">Africa</a></li>
+                        <li><a href="asia.html">Asia</a></li>
+                        <li><a href="oceania.html">Oceania</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--Background/Title -->
+        <section class="homeimage">
+            <h1 class="title">Oceania</h1>
+        </section>
+
+        <!--Popular Searches-->
+        <section class = "popularsearches">
+            <h1 id = "populartitle">Popular Searches</h1>
+            <h1 id = "popularsubtitle">Search for a well-known country by typing its name or scrolling down!</h1>
+            <input type="text" id="myInput" placeholder="Search for names.." onkeyup="myFunction()">
+
+            <!-- Country Boxes -->
+            <ul class = "countryboxes" id = "myUL">
+                <li id="Australia" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">Australia</p>
+                    <p class = "countryinfo">Australia holds the world's largest coral reef system, the Great Barrier Reef.</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "Australiabtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Australia">Learn More</a></button>
+                    </section>
+                </li>
+
+                <li id="Fiji" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">Fiji</p>
+                    <p class = "countryinfo">Fiji has a concept called "Fijian time," a calm approach to punctuality.</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "Fijibtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Fiji">Learn More</a></button>
+                    </section>
+                </li>
+
+                <li id="Kiribati" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">Kiribati</p>
+                    <p class = "countryinfo">Kiribati has 33 reef islands over 1,351,000 miles, making it very dispersed.</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "Kiribatibtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Kiribati">Learn More</a></button>
+                    </section>
+                </li>
+
+                <li id="Marshall" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">Marshall Islands</p>
+                    <p class = "countryinfo">The islands were used by the U.S. for nuclear testing, impacting the environment.</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "Marshallbtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Marshall_Islands">Learn More</a></button>
+                    </section>
+                </li>
+
+                <li id="Micronesia" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">Micronesia</p>
+                    <p class = "countryinfo">Micronesia holds the stone city "Nan Madol," showcasing ancient engineering.</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "Micronesiabtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Micronesia">Learn More</a></button>
+                    </section>
+                </li>
+
+                <li id="Nauru" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">Nauru</p>
+                    <p class = "countryinfo">Nauru is one of the world's smallest nations, covering just 8.1 square miles.</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "Naurubtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Nauru">Learn More</a></button>
+                    </section>
+                </li>
+
+                <li id="NewZealand" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">New Zealand</p>
+                    <p class = "countryinfo">New Zealand was the first country to grant women the right to vote in 1893.</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "NewZealandbtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/New_Zealand">Learn More</a></button>
+                    </section>
+                </li>
+
+                <li id="Palau" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">Palau</p>
+                    <p class = "countryinfo">Palau holds the Jellyfish Lake, holding millions of non-stinging jellyfish.</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "Palaubtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Palau">Learn More</a></button>
+                    </section>
+                </li>
+
+                <li id="Papua" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">Papua New Guinea</p>
+                    <p class = "countryinfo">In Papua New Guinea, you'll find over 800 indigenous languages spoken.</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "Papuabtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Papua_New_Guinea">Learn More</a></button>
+                    </section>
+                </li>
+
+                <li id="Samoa" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">Samoa</p>
+                    <p class = "countryinfo">Samoa is the birthplace of author Robert Louis Stevenson.</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "Samoabtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Samoa">Learn More</a></button>
+                    </section>
+                </li>
+
+                <li id="Solomon" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">Solomon Islands</p>
+                    <p class = "countryinfo">The Solomon Islands contain the famous Guadalcanal, a World War II battleground.</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "Solomonbtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Solomon_Islands">Learn More</a></button>
+                    </section>
+                </li>
+
+                <li id="Tonga" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">Tonga</p>
+                    <p class = "countryinfo">Tonga is the only Pacific nation never colonized by a foreign power.</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "Tongabtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Tonga">Learn More</a></button>
+                    </section>
+                </li>
+
+                <li id="Tuvalu" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">Tuvalu</p>
+                    <p class = "countryinfo">The people of Tuvalu are of Polynesian descent and have a rich cultural heritage.</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "Tuvalubtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Tuvalu">Learn More</a></button>
+                    </section>
+                </li>
+
+                <li id="Vanuatu" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">Vanuatu</p>
+                    <p class = "countryinfo">Vanuatu is known for its active volcanoes, offering adventures for travelers.</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "Vanuatubtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Vanuatu">Learn More</a></button>
+                    </section>
+                </li>
+            </ul>
+
+            <!-- Country Modals -->
+            <section class = "modal" id = "AustraliaModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://www.wallpaperflare.com/australia-sydney-sydney-opera-house-view-blue-sky-harbour-wallpaper-epgfo https://www.anbg.gov.au/oz/flag.html</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>Australia: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: Southeastern Oceania.</il>
+                            <li>Capital City: Canberra</li>
+                            <li>Population: 25,978,935</li>
+                            <li>Common Language(s): English</li>
+                            <li>Religions/Beliefs: Christianity, No Religion</li>
+                        </ul>
+                        <p class = "modalparagraph">Australia embraces a multicultural society, reflecting its rich indigenous heritage and waves of immigration. The nation boasts a strong and stable economy driven by industries such as mining, agriculture, and services, while being a global leader in mineral resources. Politically, it operates as a federal parliamentary constitutional monarchy, with a robust democratic system characterized by a two-party system.</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class = "modal" id = "FijiModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://www.tripadvisor.com/HotelsList-Fiji-All-Inclusive-Resorts-zfp745973.html https://www.worldatlas.com/flags/fiji</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>Fiji: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: South Pacific</il>
+                            <li>Capital City: Suva</li>
+                            <li>Population: 929,766</li>
+                            <li>Common Language(s): English, Fijian, Hindi</li>
+                            <li>Religions/Beliefs: Christianity, Hinduism</li>
+                        </ul>
+                        <p class = "modalparagraph">Fiji is renowned for its rich culture, influenced by Indian heritages and a mix of European and Asian cultures. This amalgamation is reflected in its strong emphasis on communal living known as "vanua." The economy of Fiji relies on agriculture, tourism, and remittances, with tourism being a major contributor. Politically, Fiji has experienced periods of political instability, including military coups; however, it has since transitioned to a more stable democratic system.</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class = "modal" id = "KiribatiModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://www.thoughtco.com/geography-of-kiribati-1435078 https://www.freepik.com/icon/kiribati_299687</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>Kiribati: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: Central Pacific</il>
+                            <li>Capital City: South Tarawa</li>
+                            <li>Population: 131,232</li>
+                            <li>Common Language(s): English, Gilbertese</li>
+                            <li>Religions/Beliefs: Christianity</li>
+                        </ul>
+                        <p class = "modalparagraph">Kiribati's culture is rooted in its Micronesian heritage with practices like "Tabiteuea Maneaba" playing a crucial role in community life and storytelling. The economy primarily relies on fisheries, copra production and foreign aid, while the country faces significant challenges due to rising sea levels and climate change. Politically, Kiribati operates as a republic with a democratic system and issues related to climate change and preservation are central.</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class = "modal" id = "MarshallModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://www.latimes.com/projects/marshall-islands-nuclear-testing-sea-level-rise/ https://flagsexpress.com/marshall-islands-flag/</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>Marshall Islands: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: Central Pacific</il>
+                            <li>Capital City: Delap-Uliga-Djarrit</li>
+                            <li>Population: 41,569</li>
+                            <li>Common Language(s): English, Marshallese</li>
+                            <li>Religions/Beliefs: Christianity</li>
+                        </ul>
+                        <p class = "modalparagraph">The Marshall Islands is deeply rooted in its Micronesian heritage, celebrated through legends and unique navigational skills passed down through generations. With a limited natural resources, the economy relies heavily on international financial assistance, primarily from the United States and COFA partners. Politically, it operates as a presidential republic in free association with the United States, with the U.S. providing defense and economic support.</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class = "modal" id = "MicronesiaModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://www.micronesiatour.com/ https://vectorflags.com/micronesia/fm-square-01</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>Micronesia: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: Western Pacific</il>
+                            <li>Capital City: Palikir</li>
+                            <li>Population: 114,164</li>
+                            <li>Common Language(s): English</li>
+                            <li>Religions/Beliefs: Christianity</li>
+                        </ul>
+                        <p class = "modalparagraph">Micronesia is a diverse nation with influences from indigenous Micronesians, the United States, Japan, and other Pacific nations. Traditional arts, storytelling, and music continue to play a significant role in daily life. The economy of Micronesia is primarily dependent on subsistence agriculture, fishing, and financial aid, with the United States as a key economic partner. Politically, it operates as a federal republic.</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class = "modal" id = "NauruModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://www.bbc.com/news/world-asia-pacific-15433616 https://www.freepik.com/icon/nauru_551933</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>Nauru: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: Central Pacific</il>
+                            <li>Capital City: Yaren District</li>
+                            <li>Population: 12,668</li>
+                            <li>Common Language(s): English, Nauruan</li>
+                            <li>Religions/Beliefs: Christianity</li>
+                        </ul>
+                        <p class = "modalparagraph">Nauru's culture is influenced by Micronesian traditions, as well as decades of phosphate mining, which has left its mark on the landscape. Historically reliant on phosphate exports, the government has diversified into areas like offshore banking. Politically, Nauru operates as a parliamentary republic, with a history of frequent changes in government leadership. Its small size and environmental issues, including rising sea levels.</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class = "modal" id = "NewZealandModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://www.planetware.com/tourist-attractions/new-zealand-nz.htm https://www.freepik.com/icon/new-zealand_300090</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>New Zealand: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: Southwestern Oceania</il>
+                            <li>Capital City: Wellington</li>
+                            <li>Population: 5,124,100</li>
+                            <li>Common Language(s): English, Māori</li>
+                            <li>Religions/Beliefs: Christianity</li>
+                        </ul>
+                        <p class = "modalparagraph">New Zealand fosters a multicultural society. The Māori culture is integral to the nation, reflected in art, language, and traditional ceremonies like the haka. The economy is diverse, relying on agriculture, tourism, and services, with a strong focus on sustainability and conservation. Politically, New Zealand operates as a parliamentary democracy under a constitutional monarchy, characterized by stable governance and a commitment to social welfare.</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class = "modal" id = "PalauModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://www.state.gov/countries-areas/palau/ https://www.ebay.com/itm/264461291242?hash=item3d931f0eea:g:EIkAAOSwuFVgg1BW&var=564137844527</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>Palau: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: Western Pacific</il>
+                            <li>Capital City: Ngerulmud</li>
+                            <li>Population: 18,055</li>
+                            <li>Common Language(s): English, Palauan, etc</li>
+                            <li>Religions/Beliefs: Christianity</li>
+                        </ul>
+                        <p class = "modalparagraph">Palau cherishes its rich culture deeply influenced by Micronesian traditions. The Palauan way of life values communal harmony and storytelling. With a developing economy, Palau relies on tourism, fishing, and foreign aid, emphasizing marine conservation and ecotourism. Politically, it is a presidential republic, maintaining close ties with the United States through the Compact of Free Association, which supports defense and economic assistance.</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class = "modal" id = "PapuaModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://www.worldnomads.com/explore/oceania/papua-new-guinea/staying-safe-in-papua-new-guinea https://www.countryflags.com/product/papua-new-guinea-flag-package/</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>Papua New Guinea: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: Eastern Oceania</il>
+                            <li>Capital City: Port Moresby</li>
+                            <li>Population: 10,142,619</li>
+                            <li>Common Language(s): English, Tok Pisin, Hiri Motu</li>
+                            <li>Religions/Beliefs: Christianity</li>
+                        </ul>
+                        <p class = "modalparagraph">Papua New Guinea celebrates traditional customs and rituals, including sing-sing festivals and tribal art, which play a significant role in daily life. It is also believed that many undocumented species lives in the nation's forests. The economy is primarily agrarian, relying on subsistence farming with many people being independent of the cash economy. Politically, it operates as a parliamentary democracy, marked by shifting alliances and coalitions.</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class = "modal" id = "SamoaModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://www.ramsar.org/news/samoa-designates-its-second-ramsar-site https://www.freepik.com/icon/samoa_299960</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>Samoa: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: South Pacific</il>
+                            <li>Capital City: Apia</li>
+                            <li>Population: 222,382</li>
+                            <li>Common Language(s): English, Samoan</li>
+                            <li>Religions/Beliefs: Christianity</li>
+                        </ul>
+                        <p class = "modalparagraph">Samoa embraces a Polynesian culture rooted in the fa'a Samoa way of life. Traditional practices like the 'ava ceremony and intricately woven siapo are significant cultural expressions. The economy relies on agriculture, remittances, and tourism, with a growing focus on sustainability. Politically, Samoa is a parliamentary democracy with a strong democratic tradition, having maintained political stability since gaining independence in 1962.</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class = "modal" id = "SolomonModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://whc.unesco.org/en/list/854/ https://www.freepik.com/icon/solomon-islands_300126</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>Solomon Islands: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: South Pacific</il>
+                            <li>Capital City: Honiara</li>
+                            <li>Population: 724,273</li>
+                            <li>Common Language(s): English</li>
+                            <li>Religions/Beliefs: Christianity</li>
+                        </ul>
+                        <p class = "modalparagraph">The Solomon Islands is influenced by Melanesian traditions. The economy is largely based on agriculture, logging, and fisheries, with ongoing efforts to develop tourism. Politically, it operates as a parliamentary democracy with a history of political stability, although ethnic tensions have marked its recent past. The Solomon Islands' cultural richness and natural beauty continue to be key aspects of its national identity and development.</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class = "modal" id = "TongaModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://tongapocketguide.com/10-fascinating-historical-sites-in-tonga/ https://www.vecteezy.com/vector-art/4712180-tonga-square-national-flag</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>Tonga: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: South Pacific</il>
+                            <li>Capital City: Nukuʻalofa</li>
+                            <li>Population: 106,858</li>
+                            <li>Common Language(s): English, Tongan</li>
+                            <li>Religions/Beliefs: Christianity</li>
+                        </ul>
+                        <p class = "modalparagraph">Tonga prides itself on preserving its cultural heritage. The culture is deeply rooted in the concept of respect and hierarchical structures, exemplified by the institution of nobility. The economy relies on agriculture, fisheries, and remittances, with a growing emphasis on tourism. Politically, Tonga is a constitutional monarchy with a democratic system gradually evolving, characterized by a blend of hereditary nobility and elected representatives.</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class = "modal" id = "TuvaluModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://www.state.gov/countries-areas/tuvalu/ https://www.countryflags.com/tuvalu-flag-icon/</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>Tuvalu: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: Central Pacific</il>
+                            <li>Capital City: Funafuti</li>
+                            <li>Population: 11,312</li>
+                            <li>Common Language(s): English, Tuvaluan</li>
+                            <li>Religions/Beliefs: Christianity</li>
+                        </ul>
+                        <p class = "modalparagraph">Tuvalu is influenced by Polynesian traditions, shown through traditional dance and storytelling, fostering a strong sense of community. The economy is largely reliant on fishing, copra production, and international aid, with climate resilience at the forefront of its goals due to rising sea levels. Politically, Tuvalu operates as a parliamentary democracy with a constitutional monarchy, and its vulnerability to climate change has attracted global attention.</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class = "modal" id = "VanuatuModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://www.atlasobscura.com/places/amelbati-cannibal-site https://www.flaticon.com/free-icon/vanuatu_551958</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>Vanuatu: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: South Pacific</il>
+                            <li>Capital City: Port Vila</li>
+                            <li>Population: 326,740</li>
+                            <li>Common Language(s): Bislama, English, French</li>
+                            <li>Religions/Beliefs: Christianity</li>
+                        </ul>
+                        <p class = "modalparagraph">Vanuatu celebrates a rich cultural heritage with over 100 indigenous languages spoken. Traditional practices include custom ceremonies and sand drawings. The economy is diverse, relying on agriculture, tourism, and offshore financial services, with a focus on environmental conservation. Politically, Vanuatu operates as a parliamentary republic, marked by a vibrant democracy, frequent changes in leadership, and a steadfast commitment to its cultural heritage.</p>
+                    </section>
+                </section>
+            </section>
+            
+
+        </section>
+
+        <!-- Random Generators -->
+        <section class = "generators">
+            <section class = "randomCountry">
+                <h1>Random Country Generator</h1>
+                <p>Want to start learning but don't know where to begin? No problem! 
+                    Click the button below to show a random country for you to read about!</p>
+                <button id = "randomButton">Show Random Country</button>
+            </section>
+        </section>
+
+        <script src="oceania.js"></script>
+    </body>
+</html>

@@ -1,0 +1,1290 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Navbar Designs */
+.navbar .nav .websitelogo {
+    margin-right: auto;
+    width: 40px;
+    height: 40px;
+}
+
+.navbar {
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: rgb(255, 253, 242);
+    position: fixed;
+    top: 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+    width: 100%;
+}
+.nav {
+    display: flex;
+    background-color: rgb(255, 253, 242);
+    align-items: center;
+}
+
+ .navbar .nav .desktopnav {
+    list-style-type: none;
+    width: 100%; 
+    padding-left: 10px;
+}
+
+.navbar .nav .desktopnav li {
+    display: inline;
+    padding: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar .nav li:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(189, 178, 17);
+    text-underline-offset: 5px;
+    text-decoration-thickness: 4px;
+    transition: 0.5s;
+}
+
+.navbar .nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .nav .dropbutton {
+    display: none;
+    margin-left: auto;
+    width: 110px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    background-color: rgb(255, 253, 242);
+    font-size: 16px;
+}
+
+.navbar .nav .dropbutton:hover {
+    background-color: rgb(255, 248, 211);
+    transition: 0.5s;
+}
+
+.navbar .nav .mobilemenu .mobilenav {
+    display: none;
+    min-width: 110px;
+    z-index: 1px;
+    background-color: rgb(255, 253, 242);
+    position: absolute;
+
+}
+
+.navbar .nav .mobilemenu:hover .mobilenav{
+    display: block;
+}
+
+.navbar .nav .mobilemenu .mobilenav li {
+    list-style-type: none;
+    padding: 10px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 18px;
+    margin-left: auto;
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar .nav a {
+    cursor: pointer;
+}
+
+/* Homeback Image Layout */
+.homeimage {
+    background-image: url("backgrounds/africabackground.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    object-fit: cover;
+}
+
+.homeimage h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    text-shadow: black 4px 5px;
+    font-size: 9vw;
+}
+
+/* Popular Searches Header --------------------------------------------------------------------------------------------*/
+.popularsearches {
+    width: 100%;
+    background-color: rgb(253, 252, 247);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-top: 5px solid rgb(189, 178, 17);
+}
+
+.popularsearches #myInput {
+  background-image: url("search_icon.png");
+  background-size: 1.2vw  1.2vw;
+  background-position: 10px 12px; 
+  background-repeat: no-repeat; 
+  width: 50%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px; 
+  border: 1px solid #ddd; 
+  margin-bottom: 12px; 
+  margin-top: 12px;
+}
+
+.popularsearches #populartitle {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal;
+    font-size: 6vw;
+    padding-top: 3vw;
+}
+
+.popularsearches #popularsubtitle {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    font-size: 1.5vw;
+    padding-top: 0.5vw;
+    padding-bottom: 1.5vw;
+    width: 50%;
+    text-align: center;
+}
+
+/*Country Boxes ------------------------------------------------------------------------------------------*/
+.popularsearches .countryboxes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.popularsearches .countryboxes .countrybox {
+    border: 10px solid rgb(189, 178, 17);
+    border-radius: 5px;
+    margin: 20px;
+    
+}
+
+.popularsearches .countryboxes .countrybox:hover {
+    box-shadow: 0px 0px 12px 0 rgba(0,0,0,.8);
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.popularsearches .countryboxes .countrybox .countryphotos {
+    width: 300px;
+    height: 300px;
+}
+
+.popularsearches .countryphotos {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.popularsearches .countryboxes .countrybox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 253, 241);
+}
+
+.popularsearches .countryboxes .countrybox .countryinfo {
+    width: 260px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.popularsearches .countryboxes .countrybox .countryname {
+    padding-top: 10px;
+    font-size: 32px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: underline solid rgb(245, 231, 24);
+}
+
+.popularsearches .countryboxes .countrybox button {
+    margin: 15px;
+    margin-top: 0;
+    border: none;
+    width: 90px;
+    height: 35px;
+    background-color: rgb(189, 178, 17);
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.popularsearches a {
+    text-decoration: underline white;
+    color: white;
+}
+
+/* Modal Designs -----------------------------------------------------------------------------------------------------------------------*/
+.modal {
+    display: none;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.modal .modalbox {
+    display: flex;
+    flex-direction: row;
+    margin: 10% 19.5% auto;
+    position: fixed;
+    width: 60%;
+    height: 60%;
+    background-color: rgb(255, 253, 218);
+    border: 10px solid rgb(189, 178, 17);
+    border-radius: 5px;
+    animation-name: modalopen;
+    animation-duration: 1s;
+
+}
+
+@keyframes modalopen {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.modal .modalbox .modalphoto {
+    width: 92%;
+    height: 90%;
+    margin: 2vw;
+}
+
+.modal .modalbox .modalphoto .photo {
+    width: 100%;
+    height: 80%;
+    border: 5px solid rgb(189, 178, 17);
+    background-size: cover;
+}
+
+.modal .modalbox .modalphoto .caption {
+    margin: 10px;
+    color: gray;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.modal .modalbox .modaltext {
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 27px;
+    margin: 30px;
+    margin-left: 7px;
+    text-align: center;
+    width: 70%;
+}
+
+.modal .modalbox .modaltext .modalparagraph {
+    margin-top: 20px;
+}
+
+.modal .closeButton {
+    float: right;
+    font-size: 50px;
+    color: white;
+    padding-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+/* Searches Photos + Hovers -------------------------------------------------------------------------*/
+.popularsearches #Algeria .countryphotos {
+    background-image: url(africaimages/algeriasite.jpg);
+}
+.popularsearches #Algeria .countryphotos:hover {
+    background-image: url(africaimages/algeriaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Angola .countryphotos {
+    background-image: url(africaimages/angolasite.jpg);
+}
+.popularsearches #Angola .countryphotos:hover {
+    background-image: url(africaimages/angolaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Benin .countryphotos {
+    background-image: url(africaimages/beninsite.jpg);
+}
+.popularsearches #Benin .countryphotos:hover {
+    background-image: url(africaimages/beninflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Botswana .countryphotos {
+    background-image: url(africaimages/botswanasite.jpg);
+}
+.popularsearches #Botswana .countryphotos:hover {
+    background-image: url(africaimages/botswanaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Burkina .countryphotos {
+    background-image: url(africaimages/burkinasite.jpg);
+}
+.popularsearches #Burkina .countryphotos:hover {
+    background-image: url(africaimages/burkinaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Burundi .countryphotos {
+    background-image: url(africaimages/burundisite.jpeg);
+}
+.popularsearches #Burundi .countryphotos:hover {
+    background-image: url(africaimages/burundiflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Cabo .countryphotos {
+    background-image: url(africaimages/cabosite.jpg);
+}
+.popularsearches #Cabo .countryphotos:hover {
+    background-image: url(africaimages/caboflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Cameroon .countryphotos {
+    background-image: url(africaimages/cameroonsite.jpg);
+}
+.popularsearches #Cameroon .countryphotos:hover {
+    background-image: url(africaimages/cameroonflag.png);
+    transition: 1s;
+}
+
+.popularsearches #CAR .countryphotos {
+    background-image: url(africaimages/carsite.png);
+}
+.popularsearches #CAR .countryphotos:hover {
+    background-image: url(africaimages/carflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Chad .countryphotos {
+    background-image: url(africaimages/chadsite.jpg);
+}
+.popularsearches #Chad .countryphotos:hover {
+    background-image: url(africaimages/chadflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Comoros .countryphotos {
+    background-image: url(africaimages/comorossite.jpeg);
+}
+.popularsearches #Comoros .countryphotos:hover {
+    background-image: url(africaimages/comorosflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Congo .countryphotos {
+    background-image: url(africaimages/congosite.jpg);
+}
+.popularsearches #Congo .countryphotos:hover {
+    background-image: url(africaimages/congoflag.png);
+    transition: 1s;
+}
+
+.popularsearches #DRC .countryphotos {
+    background-image: url(africaimages/drcsite.jpg);
+}
+.popularsearches #DRC .countryphotos:hover {
+    background-image: url(africaimages/drcflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Ivory .countryphotos {
+    background-image: url(africaimages/ivorysite.jpg);
+}
+.popularsearches #Ivory .countryphotos:hover {
+    background-image: url(africaimages/ivoryflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Djibouti .countryphotos {
+    background-image: url(africaimages/djiboutisite.jpg);
+}
+.popularsearches #Djibouti .countryphotos:hover {
+    background-image: url(africaimages/djiboutiflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Egypt .countryphotos {
+    background-image: url(africaimages/egyptsite.jpg);
+}
+.popularsearches #Egypt .countryphotos:hover {
+    background-image: url(africaimages/egyptflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Equatorial .countryphotos {
+    background-image: url(africaimages/equatorialsite.jpg);
+}
+.popularsearches #Equatorial .countryphotos:hover {
+    background-image: url(africaimages/equatorialflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Eritrea .countryphotos {
+    background-image: url(africaimages/eritreasite.jpg);
+}
+.popularsearches #Eritrea .countryphotos:hover {
+    background-image: url(africaimages/eritreaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Eswatini .countryphotos {
+    background-image: url(africaimages/eswatinisite.jpeg);
+}
+.popularsearches #Eswatini .countryphotos:hover {
+    background-image: url(africaimages/eswatiniflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Ethiopia .countryphotos {
+    background-image: url(africaimages/ethiopiasite.jpg);
+}
+.popularsearches #Ethiopia .countryphotos:hover {
+    background-image: url(africaimages/ethiopiaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Gabon .countryphotos {
+    background-image: url(africaimages/gabonsite.jpg);
+}
+.popularsearches #Gabon .countryphotos:hover {
+    background-image: url(africaimages/gabonflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Gambia .countryphotos {
+    background-image: url(africaimages/gambiasite.jpg);
+}
+.popularsearches #Gambia .countryphotos:hover {
+    background-image: url(africaimages/gambiaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Ghana .countryphotos {
+    background-image: url(africaimages/ghanasite.jpg);
+}
+.popularsearches #Ghana .countryphotos:hover {
+    background-image: url(africaimages/ghanaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Guinea .countryphotos {
+    background-image: url(africaimages/guineasite.jpg);
+}
+.popularsearches #Guinea .countryphotos:hover {
+    background-image: url(africaimages/guineaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Bissau .countryphotos {
+    background-image: url(africaimages/bissausite.jpg);
+}
+.popularsearches #Bissau .countryphotos:hover {
+    background-image: url(africaimages/bissauflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Kenya .countryphotos {
+    background-image: url(africaimages/kenyasite.jpg);
+}
+.popularsearches #Kenya .countryphotos:hover {
+    background-image: url(africaimages/kenyaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Lesotho .countryphotos {
+    background-image: url(africaimages/lesothosite.jpg);
+}
+.popularsearches #Lesotho .countryphotos:hover {
+    background-image: url(africaimages/lesothoflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Liberia .countryphotos {
+    background-image: url(africaimages/liberiasite.jpg);
+}
+.popularsearches #Liberia .countryphotos:hover {
+    background-image: url(africaimages/liberiaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Libya .countryphotos {
+    background-image: url(africaimages/libyasite.jpg);
+}
+.popularsearches #Libya .countryphotos:hover {
+    background-image: url(africaimages/libyaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Madagascar .countryphotos {
+    background-image: url(africaimages/madagascarsite.jpg);
+}
+.popularsearches #Madagascar .countryphotos:hover {
+    background-image: url(africaimages/madagascarflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Malawi .countryphotos {
+    background-image: url(africaimages/malawisite.jpg);
+}
+.popularsearches #Malawi .countryphotos:hover {
+    background-image: url(africaimages/malawiflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Mali .countryphotos {
+    background-image: url(africaimages/malisite.jpg);
+}
+.popularsearches #Mali .countryphotos:hover {
+    background-image: url(africaimages/malawiflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Mauritania .countryphotos {
+    background-image: url(africaimages/mauritaniasite.jpg);
+}
+.popularsearches #Mauritania .countryphotos:hover {
+    background-image: url(africaimages/mauritaniaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Mauritius .countryphotos {
+    background-image: url(africaimages/mauritiussite.jpg);
+}
+.popularsearches #Mauritius .countryphotos:hover {
+    background-image: url(africaimages/mauritiusflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Morocco .countryphotos {
+    background-image: url(africaimages/moroccosite.jpg);
+}
+.popularsearches #Morocco .countryphotos:hover {
+    background-image: url(africaimages/moroccoflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Mozambique .countryphotos {
+    background-image: url(africaimages/mozambiquesite.jpg);
+}
+.popularsearches #Mozambique .countryphotos:hover {
+    background-image: url(africaimages/mozambiqueflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Namibia .countryphotos {
+    background-image: url(africaimages/namibiasite.jpg);
+}
+.popularsearches #Namibia .countryphotos:hover {
+    background-image: url(africaimages/namibiaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Niger .countryphotos {
+    background-image: url(africaimages/nigersite.jpg);
+}
+.popularsearches #Niger .countryphotos:hover {
+    background-image: url(africaimages/nigerflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Nigeria .countryphotos {
+    background-image: url(africaimages/nigeriasite.jpg);
+}
+.popularsearches #Nigeria .countryphotos:hover {
+    background-image: url(africaimages/nigeriaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Rwanda .countryphotos {
+    background-image: url(africaimages/rwandasite.jpg);
+}
+.popularsearches #Rwanda .countryphotos:hover {
+    background-image: url(africaimages/rwandaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #SaoTome .countryphotos {
+    background-image: url(africaimages/saotomesite.jpg);
+}
+.popularsearches #SaoTome .countryphotos:hover {
+    background-image: url(africaimages/saotomeflag.png);
+    transition: 1s;
+}
+.popularsearches .countryboxes #SaoTome .countryname {
+    font-size: 30px;
+}
+
+.popularsearches #Senegal .countryphotos {
+    background-image: url(africaimages/senegalsite.jpg);
+}
+.popularsearches #Senegal .countryphotos:hover {
+    background-image: url(africaimages/senegalflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Seychelles .countryphotos {
+    background-image: url(africaimages/seychellessite.jpg);
+}
+.popularsearches #Seychelles .countryphotos:hover {
+    background-image: url(africaimages/seychellesflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Sierra .countryphotos {
+    background-image: url(africaimages/sierrasite.jpg);
+}
+.popularsearches #Sierra .countryphotos:hover {
+    background-image: url(africaimages/sierraflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Somalia .countryphotos {
+    background-image: url(africaimages/somaliasite.jpg);
+}
+.popularsearches #Somalia .countryphotos:hover {
+    background-image: url(africaimages/somaliaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #SouthAfrica .countryphotos {
+    background-image: url(africaimages/southafricasite.jpg);
+}
+.popularsearches #SouthAfrica .countryphotos:hover {
+    background-image: url(africaimages/southafricaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #SouthSudan .countryphotos {
+    background-image: url(africaimages/southsudansite.jpg);
+}
+.popularsearches #SouthSudan .countryphotos:hover {
+    background-image: url(africaimages/southsudanflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Sudan .countryphotos {
+    background-image: url(africaimages/sudansite.jpeg);
+}
+.popularsearches #Sudan .countryphotos:hover {
+    background-image: url(africaimages/sudanflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Tanzania .countryphotos {
+    background-image: url(africaimages/tanzaniasite.jpg);
+}
+.popularsearches #Tanzania .countryphotos:hover {
+    background-image: url(africaimages/tanzaniaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Togo .countryphotos {
+    background-image: url(africaimages/togosite.jpg);
+}
+.popularsearches #Togo .countryphotos:hover {
+    background-image: url(africaimages/togoflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Tunisia .countryphotos {
+    background-image: url(africaimages/tunisiasite.jpeg);
+}
+.popularsearches #Tunisia .countryphotos:hover {
+    background-image: url(africaimages/tunisiaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Uganda .countryphotos {
+    background-image: url(africaimages/ugandasite.jpg);
+}
+.popularsearches #Uganda .countryphotos:hover {
+    background-image: url(africaimages/ugandaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Zambia .countryphotos {
+    background-image: url(africaimages/zambiasite.jpg);
+}
+.popularsearches #Zambia .countryphotos:hover {
+    background-image: url(africaimages/zambiaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Zimbabwe .countryphotos {
+    background-image: url(africaimages/zimbabwesite.jpg);
+}
+.popularsearches #Zimbabwe .countryphotos:hover {
+    background-image: url(africaimages/zimbabweflag.jpg);
+    transition: 1s;
+}
+
+/* Modal Images */
+.popularsearches #AlgeriaModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/algeriasite.jpg);
+}
+.popularsearches #AlgeriaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/algeriaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #AngolaModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/angolasite.jpg);
+}
+.popularsearches #AngolaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/angolaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #BeninModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/beninsite.jpg);
+}
+.popularsearches #BeninModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/beninflag.png);
+    transition: 1s;
+}
+
+.popularsearches #BotswanaModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/botswanasite.jpg);
+}
+.popularsearches #BotswanaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/botswanaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #BurkinaModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/burkinasite.jpg);
+}
+.popularsearches #BurkinaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/burkinaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #BurundiModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/burundisite.jpeg);
+}
+.popularsearches #BurundiModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/burundiflag.png);
+    transition: 1s;
+}
+
+.popularsearches #CaboModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/cabosite.jpg);
+}
+.popularsearches #CaboModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/caboflag.png);
+    transition: 1s;
+}
+
+.popularsearches #CameroonModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/cameroonsite.jpg);
+}
+.popularsearches #CameroonModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/cameroonflag.png);
+    transition: 1s;
+}
+
+.popularsearches #CARModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/carsite.png);
+}
+.popularsearches #CARModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/carflag.png);
+    transition: 1s;
+}
+
+.popularsearches #ChadModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/chadsite.jpg);
+}
+.popularsearches #ChadModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/chadflag.png);
+    transition: 1s;
+}
+
+.popularsearches #ComorosModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/comorossite.jpeg);
+}
+.popularsearches #ComorosModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/comorosflag.png);
+    transition: 1s;
+}
+
+.popularsearches #CongoModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/congosite.jpg);
+}
+.popularsearches #CongoModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/congoflag.png);
+    transition: 1s;
+}
+
+.popularsearches #DRCModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/drcsite.jpg);
+}
+.popularsearches #DRCModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/drcflag.png);
+    transition: 1s;
+}
+
+.popularsearches #IvoryModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/ivorysite.jpg);
+}
+.popularsearches #IvoryModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/ivoryflag.png);
+    transition: 1s;
+}
+
+.popularsearches #DjiboutiModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/djiboutisite.jpg);
+}
+.popularsearches #DjiboutiModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/djiboutiflag.png);
+    transition: 1s;
+}
+
+.popularsearches #EgyptModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/egyptsite.jpg);
+}
+.popularsearches #EgyptModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/egyptflag.png);
+    transition: 1s;
+}
+
+.popularsearches #EquatorialModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/equatorialsite.jpg);
+}
+.popularsearches #EquatorialModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/equatorialflag.png);
+    transition: 1s;
+}
+
+.popularsearches #EritreaModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/eritreasite.jpg);
+}
+.popularsearches #EritreaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/eritreaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #EswatiniModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/eswatinisite.jpeg);
+}
+.popularsearches #EswatiniModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/eswatiniflag.png);
+    transition: 1s;
+}
+
+.popularsearches #GabonModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/gabonsite.jpg);
+}
+.popularsearches #GabonModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/gabonflag.png);
+    transition: 1s;
+}
+
+.popularsearches #GambiaModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/gambiasite.jpg);
+}
+.popularsearches #GambiaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/gambiaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #GhanaModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/ghanasite.jpg);
+}
+.popularsearches #GhanaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/ghanaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #GuineaModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/guineasite.jpg);
+}
+.popularsearches #GuineaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/guineaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #BissauModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/bissausite.jpg);
+}
+.popularsearches #BissauModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/bissauflag.png);
+    transition: 1s;
+}
+
+.popularsearches #KenyaModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/kenyasite.jpg);
+}
+.popularsearches #KenyaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/kenyaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #LesothoModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/lesothosite.jpg);
+}
+.popularsearches #LesothoModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/lesothoflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #LiberiaModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/liberiasite.jpg);
+}
+.popularsearches #LiberiaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/liberiaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #LibyaModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/libyasite.jpg);
+}
+.popularsearches #LibyaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/libyaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #MadgascarModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/madagascarsite.jpg);
+}
+.popularsearches #MadgascarModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/madagascarflag.png);
+    transition: 1s;
+}
+
+.popularsearches #MalawiModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/malawisite.jpg);
+}
+.popularsearches #MalawiModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/malawiflag.png);
+    transition: 1s;
+}
+
+.popularsearches #MaliModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/malisite.jpg);
+}
+.popularsearches #MaliModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/maliflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #MauritaniaModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/mauritaniasite.jpg);
+}
+.popularsearches #MauritaniaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/mauritaniaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #MauritiusModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/mauritiussite.jpg);
+}
+.popularsearches #MauritiusModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/mauritiusflag.png);
+    transition: 1s;
+}
+
+.popularsearches #MoroccoModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/moroccosite.jpg);
+}
+.popularsearches #MoroccoModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/moroccoflag.png);
+    transition: 1s;
+}
+
+.popularsearches #MozambiqueModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/mozambiquesite.jpg);
+}
+.popularsearches #MozambiqueModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/mozambiqueflag.png);
+    transition: 1s;
+}
+
+.popularsearches #NamibiaModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/namibiasite.jpg);
+}
+.popularsearches #NamibiaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/namibiaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #NigerModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/nigersite.jpg);
+}
+.popularsearches #NigerModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/nigerflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #NigeriaModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/nigeriasite.jpg);
+}
+.popularsearches #NigeriaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/nigeriaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #RwandaModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/rwandasite.jpg);
+}
+.popularsearches #RwandaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/rwandaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #SaoTomeModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/saotomesite.jpg);
+}
+.popularsearches #SaoTomeModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/saotomeflag.png);
+    transition: 1s;
+}
+
+.popularsearches #SenegalModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/senegalsite.jpg);
+}
+.popularsearches #SenegalModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/senegalflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #SeychellesModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/seychellessite.jpg);
+}
+.popularsearches #SeychellesModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/seychellesflag.png);
+    transition: 1s;
+}
+
+.popularsearches #SierraModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/sierrasite.jpg);
+}
+.popularsearches #SierraModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/sierraflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #SomaliaModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/somaliasite.jpg);
+}
+.popularsearches #SomaliaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/somaliaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #SouthAfricaModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/southafricasite.jpg);
+}
+.popularsearches #SouthAfricaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/southafricaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #SouthSudanModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/southsudansite.jpg);
+}
+.popularsearches #SouthSudanModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/southsudanflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #SudanModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/sudansite.jpeg);
+}
+.popularsearches #SudanModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/sudanflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #TanzaniaModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/tanzaniasite.jpg);
+}
+.popularsearches #TanzaniaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/tanzaniaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #TogoModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/togosite.jpg);
+}
+.popularsearches #TogoModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/togoflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #TunisiaModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/tunisiasite.jpeg);
+}
+.popularsearches #TunisiaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/tunisiaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #UgandaModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/ugandasite.jpg);
+}
+.popularsearches #UgandaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/ugandaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #ZambiaModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/zambiasite.jpg);
+}
+.popularsearches #ZambiaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/zambiaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #ZimbabweModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/zimbabwesite.jpg);
+}
+.popularsearches #ZimbabweModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/zimbabweflag.jpg);
+    transition: 1s;
+}
+
+/*Random Generator Design*/
+.generators {
+    background-color: rgb(209, 201, 97);
+    box-shadow: 
+        inset 0px 11px 8px -6px rgb(182, 171, 16),
+        inset 0px -11px 8px -6px rgb(182, 171, 16); 
+    border-bottom: 5px solid rgb(149, 140, 19);
+    border-top: 5px solid rgb(149, 140, 19);
+}
+
+.generators .randomCountry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.generators h1 {
+    font-size: 3vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline solid rgb(184, 173, 21);
+    text-align: center;
+}
+
+.generators p {
+    font-size: 1.5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 40%;
+    text-align: center;
+    margin: 1.5vw;
+}
+
+.generators #randomButton {
+    border: none;
+    padding: 1.4vw;
+    color: black;
+    background-color: rgb(255, 253, 225);
+    font-size: 1.3vw;
+    border-radius: 7px;
+}
+
+.generators #randomButton:hover {
+    background-color: rgb(255, 252, 203);
+    cursor: pointer;
+}
+
+/* Making it responsive */
+@media (max-width: 800px) {
+    .navbar .nav .desktopnav {
+        display: none;
+    }
+    .navbar .nav .mobilemenu .dropbutton {
+        display: block;
+        margin-right: 15px;
+    }
+
+    .homeimage {
+        width: 100%;
+        height: 300px;
+    }
+    .homeimage .title {
+        text-shadow: black 2px 3px;
+    }
+
+    .popularsearches #populartitle {
+        font-size: 7vw;
+    }
+    .popularsearches #popularsubtitle {
+        font-size: 3vw;
+    }
+
+    .modal .modalbox {
+        flex-direction: column;
+        width: 80%;
+        height: 90%;
+        margin: 11% 8% auto;
+    }
+
+    .modal .modalbox .modalphoto {
+        height: 50%;
+        margin-bottom: 10px;
+    }
+
+    .modal .modalbox .modaltext {
+        margin-top: 0;
+        font-size: 13px;
+        line-height: 18px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+    .modal .modalbox .modalphoto .caption {
+        margin: 5px;
+        color: gray;
+        font-style: italic;
+        font-size: 9px;
+    }
+
+    .generators {
+        flex-direction: column;
+    }
+    .generators h1 {
+        font-size: 7vw;
+    }
+    .generators p {
+        font-size: 5vw;
+        width: 80%;
+        margin: 6vw;
+    }
+    .generators #randomButton {
+        padding: 5vw;
+        font-size: 4vw;
+    }
+
+}

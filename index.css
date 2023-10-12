@@ -1,0 +1,869 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(homeimages/intro1.jpg)
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Navigation Bar --------------------------------------------------------------------------------------------*/
+.navbar .nav .websitelogo {
+    margin-right: auto;
+    width: 40px;
+    height: 40px;
+}
+
+.navbar {
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: aliceblue;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+    width: 100%;
+}
+.nav {
+    display: flex;
+    background-color: aliceblue;
+    align-items: center;
+}
+
+ .navbar .nav .desktopnav {
+    list-style-type: none;
+    width: 100%; 
+    padding-left: 10px;
+}
+
+.navbar .nav .desktopnav li {
+    display: inline;
+    padding: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar .nav li:hover {
+    text-decoration: underline;
+    text-decoration-color: lightblue;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 4px;
+    transition: 0.5s;
+}
+
+.navbar .nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .nav .dropbutton {
+    display: none;
+    margin-left: auto;
+    width: 110px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    background-color: aliceblue;
+    font-size: 16px;
+}
+
+.navbar .nav .dropbutton:hover {
+    background-color: lightblue;
+    transition: 0.5s;
+}
+
+.navbar .nav .mobilemenu .mobilenav {
+    display: none;
+    min-width: 110px;
+    z-index: 1px;
+    background-color: aliceblue;
+    position: absolute;
+
+}
+
+.navbar .nav .mobilemenu:hover .mobilenav{
+    display: block;
+}
+
+.navbar .nav .mobilemenu .mobilenav li {
+    list-style-type: none;
+    padding: 10px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 18px;
+    margin-left: auto;
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar .nav a {
+    cursor: pointer;
+}
+
+/* Title Screen --------------------------------------------------------------------------------------------*/
+.homeimage {
+    background-image: url("backgrounds/homebackground.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    object-fit: cover;
+}
+
+.homeimage h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    text-shadow: black 3px 4px;
+    font-size: 8vw;
+}
+
+.homeimage .subtitle {
+    font-size: 3vw;
+}
+
+/* Introduction Section --------------------------------------------------------------------------------------------*/
+.intro {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    align-items: center;
+    box-shadow: 0 -4px 8px 0 rgba(0,0,0,.2);
+    border-bottom: 5px solid rgb(43, 100, 153);
+    border-top: 5px solid rgb(43, 100, 153);
+    background-color: white;
+}
+
+.intro p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5vw;
+    line-height: 2vw;
+}
+
+.intro .introimages {
+    width: 100vw;
+    height: 25vw;
+    object-fit: cover;
+    border-style: solid;
+    border-width: 0.5vw;
+    border-color: rgb(43, 100, 153);
+    background-image: url(homeimages/intro1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.intro #plane {
+    background-image: url(homeimages/intro2.jpg);
+
+}
+
+.intro #ship:hover {
+    background-image: url(homeimages/ship.jpg);
+    transition: 1s;
+}
+
+.intro #plane:hover {
+    background-image: url(homeimages/plane.jpg);
+    transition: 1s;
+}
+
+/* Statistics Section --------------------------------------------------------------------------------------------*/
+.stats {
+    display: flex;
+    flex-direction: row;
+    background-color: lightblue;
+    padding: 20px;
+    justify-content: space-evenly;
+    box-shadow: 
+        inset 0px 11px 8px -6px rgb(162, 201, 214),
+        inset 0px -11px 8px -6px rgb(162, 201, 214); 
+}
+
+.stats .statboxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 165px;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.stats .number {
+    font-size: 4vw;
+}
+
+/* Popular Searches Header --------------------------------------------------------------------------------------------*/
+.popularsearches {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-top: 5px solid rgb(43, 100, 153);
+}
+
+.popularsearches #myInput {
+  background-image: url("search_icon.png");
+  background-size: 1.2vw  1.2vw;
+  background-position: 10px 12px; 
+  background-repeat: no-repeat; 
+  width: 50%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px; 
+  border: 1px solid #ddd; 
+  margin-bottom: 12px; 
+  margin-top: 12px;
+}
+
+.popularsearches #populartitle {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal;
+    font-size: 6vw;
+    padding-top: 3vw;
+}
+
+.popularsearches #popularsubtitle {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    font-size: 1.5vw;
+    padding-top: 0.5vw;
+    padding-bottom: 1.5vw;
+    width: 50%;
+    text-align: center;
+}
+
+/* Popular Searches Searching --------------------------------------------------------------------------------------------*/
+.popularsearches .countryboxes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.popularsearches .countryboxes .countrybox {
+    border: 10px solid rgb(64, 140, 143);
+    border-radius: 5px;
+    margin: 20px;
+    
+}
+
+.popularsearches .countryboxes .countrybox:hover {
+    box-shadow: 0px 0px 12px 0 rgba(0,0,0,.8);
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.popularsearches .countryboxes .countrybox .countryphotos {
+    width: 300px;
+    height: 300px;
+}
+
+.popularsearches .countryphotos {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.popularsearches .countryboxes .countrybox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(233, 245, 253);
+}
+
+.popularsearches .countryboxes .countrybox .countryinfo {
+    width: 260px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.popularsearches .countryboxes .countrybox .countryname {
+    padding-top: 10px;
+    font-size: 35px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: underline solid rgb(64, 140, 143);
+}
+
+.popularsearches .countryboxes .countrybox button {
+    margin: 15px;
+    margin-top: 0;
+    border: none;
+    width: 90px;
+    height: 35px;
+    background-color: rgb(64, 140, 143);
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.popularsearches a {
+    text-decoration: underline white;
+    color: white;
+}
+
+
+/* Modal Designs -----------------------------------------------------------------------------------------------------------------------*/
+.modal {
+    display: none;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.modal .modalbox {
+    display: flex;
+    flex-direction: row;
+    margin: 10% 19.5% auto;
+    position: fixed;
+    width: 60%;
+    height: 60%;
+    background-color: aliceblue;
+    border: 10px solid lightblue;
+    border-radius: 5px;
+    animation-name: modalopen;
+    animation-duration: 1s;
+
+}
+
+@keyframes modalopen {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.modal .modalbox .modalphoto {
+    width: 92%;
+    height: 90%;
+    margin: 2vw;
+}
+
+.modal .modalbox .modalphoto .photo {
+    width: 100%;
+    height: 80%;
+    border: 5px solid lightblue;
+    background-size: cover;
+}
+
+.modal .modalbox .modalphoto .caption {
+    margin: 10px;
+    color: gray;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.modal .modalbox .modaltext {
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 27px;
+    margin: 30px;
+    margin-left: 7px;
+    text-align: center;
+    width: 70%;
+}
+
+.modal .modalbox .modaltext .modalparagraph {
+    margin-top: 20px;
+}
+
+.modal .closeButton {
+    float: right;
+    font-size: 50px;
+    color: white;
+    padding-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+/* Searches Photos + Hovers -------------------------------------------------------------------------*/
+.popularsearches #Australia .countryphotos {
+    background-image: url(oceaniaimages/australiasite.jpg);
+}
+.popularsearches #Australia .countryphotos:hover {
+    background-image: url(oceaniaimages/australiaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Brazil .countryphotos {
+    background-image: url(southimages/brazilsite.jpg);
+}
+.popularsearches #Brazil .countryphotos:hover {
+    background-image: url(southimages/brazilflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Canada .countryphotos {
+    background-image: url(northimages/canadasite.jpg);
+}
+.popularsearches #Canada .countryphotos:hover {
+    background-image: url(northimages/canadaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #China .countryphotos {
+    background-image: url(asiaimages/chinasite.jpg);
+}
+.popularsearches #China .countryphotos:hover {
+    background-image: url(asiaimages/chinaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #France .countryphotos {
+    background-image: url(europeimages/francesite.jpg);
+}
+.popularsearches #France .countryphotos:hover {
+    background-image: url(europeimages/franceflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Germany .countryphotos {
+    background-image: url(europeimages/germanysite.jpg);
+}
+.popularsearches #Germany .countryphotos:hover {
+    background-image: url(europeimages/germanyflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #India .countryphotos {
+    background-image: url(asiaimages/indiasite.jpg);
+}
+.popularsearches #India .countryphotos:hover {
+    background-image: url(asiaimages/indiaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Italy .countryphotos {
+    background-image: url(europeimages/italysite.jpg);
+}
+.popularsearches #Italy .countryphotos:hover {
+    background-image: url(europeimages/italyflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Japan .countryphotos {
+    background-image: url(asiaimages/japansite.jpg);
+}
+.popularsearches #Japan .countryphotos:hover {
+    background-image: url(asiaimages/japanflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Mexico .countryphotos {
+    background-image: url(northimages/mexicosite.jpg);
+}
+.popularsearches #Mexico .countryphotos:hover {
+    background-image: url(northimages/mexicoflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Nigeria .countryphotos {
+    background-image: url(africaimages/nigeriasite.jpg);
+}
+.popularsearches #Nigeria .countryphotos:hover {
+    background-image: url(africaimages/nigeriaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Pakistan .countryphotos {
+    background-image: url(asiaimages/pakistansite.jpg);
+}
+.popularsearches #Pakistan .countryphotos:hover {
+    background-image: url(asiaimages/pakistanflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Russia .countryphotos {
+    background-image: url(asiaimages/russiasite.jpg);
+}
+.popularsearches #Russia .countryphotos:hover {
+    background-image: url(asiaimages/russiaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #SouthAfrica .countryphotos {
+    background-image: url(africaimages/southafricasite.jpg);
+}
+.popularsearches #SouthAfrica .countryphotos:hover {
+    background-image: url(africaimages/southafricaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #SK .countryphotos {
+    background-image: url(asiaimages/sksite.jpg);
+}
+.popularsearches #SK .countryphotos:hover {
+    background-image: url(asiaimages/skflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Spain .countryphotos {
+    background-image: url(europeimages/spainsite.jpg);
+}
+.popularsearches #Spain .countryphotos:hover {
+    background-image: url(europeimages/spainflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Ukraine .countryphotos {
+    background-image: url(europeimages/ukrainesite.jpg);
+}
+.popularsearches #Ukraine .countryphotos:hover {
+    background-image: url(europeimages/ukraineflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #UK .countryphotos {
+    background-image: url(europeimages/uksite.jpg);
+}
+.popularsearches #UK .countryphotos:hover {
+    background-image: url(europeimages/ukflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #USA .countryphotos {
+    background-image: url(northimages/usasite.jpg);
+}
+.popularsearches #USA .countryphotos:hover {
+    background-image: url(northimages/usaflag.jpg);
+    transition: 1s;
+}
+
+/*Modal Images --------------------------------------------------------------------------------------------------*/
+.popularsearches #AustraliaModal .modalbox .modalphoto .photo {
+    background-image: url(oceaniaimages/australiasite.jpg);
+}
+.popularsearches #AustraliaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(oceaniaimages/australiaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #BrazilModal .modalbox .modalphoto .photo {
+    background-image: url(southimages/brazilsite.jpg);
+}
+.popularsearches #BrazilModal .modalbox .modalphoto .photo:hover {
+    background-image: url(southimages/brazilflag.png);
+    transition: 1s;
+}
+
+.popularsearches #CanadaModal .modalbox .modalphoto .photo {
+    background-image: url(northimages/canadasite.jpg);
+}
+.popularsearches #CanadaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(northimages/canadaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #ChinaModal .modalbox .modalphoto .photo {
+    background-image: url(asiaimages/chinasite.jpg);
+}
+.popularsearches #ChinaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(asiaimages/chinaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #FranceModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/francesite.jpg);
+}
+.popularsearches #FranceModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/franceflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #GermanyModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/germanysite.jpg);
+}
+.popularsearches #GermanyModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/germanyflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #IndiaModal .modalbox .modalphoto .photo {
+    background-image: url(asiaimages/indiasite.jpg);
+}
+.popularsearches #IndiaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(asiaimages/indiaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #ItalyModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/italysite.jpg);
+}
+.popularsearches #ItalyModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/italyflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #JapanModal .modalbox .modalphoto .photo {
+    background-image: url(asiaimages/japansite.jpg);
+}
+.popularsearches #JapanModal .modalbox .modalphoto .photo:hover {
+    background-image: url(asiaimages/japanflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #MexicoModal .modalbox .modalphoto .photo {
+    background-image: url(southimages/mexicosite.jpg);
+}
+.popularsearches #MexicoModal .modalbox .modalphoto .photo:hover {
+    background-image: url(southimages/mexicoflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #NigeriaModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/nigeriasite.jpg);
+}
+.popularsearches #NigeriaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/nigeriaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #PakistanModal .modalbox .modalphoto .photo {
+    background-image: url(asiaimages/pakistansite.jpg);
+}
+.popularsearches #PakistanModal .modalbox .modalphoto .photo:hover {
+    background-image: url(asiaimages/pakistanflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #RussiaModal .modalbox .modalphoto .photo {
+    background-image: url(asiaimages/russiasite.jpg);
+}
+.popularsearches #RussiaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(asiaimages/russiaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #SouthAfricaModal .modalbox .modalphoto .photo {
+    background-image: url(africaimages/southafricasite.jpg);
+}
+.popularsearches #SouthAfricaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(africaimages/southafricaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #SKModal .modalbox .modalphoto .photo {
+    background-image: url(asiaimages/sksite.jpg);
+}
+.popularsearches #SKModal .modalbox .modalphoto .photo:hover {
+    background-image: url(asiaimages/skflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #SpainModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/spainsite.jpg);
+}
+.popularsearches #SpainModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/spainflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #UkraineModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/ukrainesite.jpg);
+}
+.popularsearches #UkraineModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/ukraineflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #UKModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/uksite.jpg);
+}
+.popularsearches #UKModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/ukflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #USAModal .modalbox .modalphoto .photo {
+    background-image: url(northimages/usasite.jpg);
+}
+.popularsearches #USAModal .modalbox .modalphoto .photo:hover {
+    background-image: url(northimages/usaflag.jpg);
+    transition: 1s;
+}
+
+/*Random Generator Design*/
+.generators {
+    background-color: lightblue;
+    box-shadow: 
+        inset 0px 11px 8px -6px rgb(162, 201, 214),
+        inset 0px -11px 8px -6px rgb(162, 201, 214); 
+    border-bottom: 5px solid rgb(43, 100, 153);
+    border-top: 5px solid rgb(43, 100, 153);
+}
+
+.generators .randomCountry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.generators h1 {
+    font-size: 3vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline solid rgb(64, 140, 143);
+    text-align: center;
+}
+
+.generators p {
+    font-size: 1.5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 40%;
+    text-align: center;
+    margin: 1.5vw;
+}
+
+.generators #randomButton {
+    border: none;
+    padding: 1.4vw;
+    color: black;
+    background-color: aliceblue;
+    font-size: 1.3vw;
+    border-radius: 7px;
+}
+
+.generators #randomButton:hover {
+    background-color: rgb(210, 223, 235);
+    cursor: pointer;
+}
+
+
+
+
+
+/* RESPONSIVE CODE --------------------------------------------------------------------------------------------*/
+@media (max-width: 800px) {
+    .navbar .nav .desktopnav {
+        display: none;
+    }
+    .navbar .nav .mobilemenu .dropbutton {
+        display: block;
+        margin-right: 15px;
+    }
+
+    .homeimage {
+        width: 100%;
+        height: 300px;
+    }
+    .homeimage .title {
+        text-shadow: black 2px 3px;
+    }
+    .homeimage .subtitle {
+        text-shadow: black 0.5px 1px;
+    }
+
+    .intro {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        padding-top: 7vw;
+        padding-bottom: 7vw;
+    }
+
+    .intro .introimages {
+        width: 80vw;
+    }
+
+    .intro p {
+        line-height: 6vw;
+        font-size: 3vw;
+    }
+
+    .intro .introtext {
+        width: 80%;
+    }
+
+    .stats {
+        flex-direction: column;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .stats .statboxes {
+        margin: 0 auto;
+        padding: 20px;
+        font-size: 8vw;
+        width: 60%;
+    }
+
+    .stats .number {
+        font-size: 12vw;
+    }
+
+    .popularsearches #populartitle {
+        font-size: 7vw;
+    }
+
+    .popularsearches #popularsubtitle {
+        font-size: 3vw;
+    }
+
+    .modal .modalbox {
+        flex-direction: column;
+        width: 80%;
+        height: 90%;
+        margin: 11% 8% auto;
+    }
+
+    .modal .modalbox .modalphoto {
+        height: 50%;
+        margin-bottom: 10px;
+    }
+
+    .modal .modalbox .modaltext {
+        margin-top: 0;
+        font-size: 13px;
+        line-height: 18px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+    .modal .modalbox .modalphoto .caption {
+        margin: 5px;
+        color: gray;
+        font-style: italic;
+        font-size: 9px;
+    }
+
+    .generators {
+        flex-direction: column;
+    }
+    .generators h1 {
+        font-size: 7vw;
+    }
+    .generators p {
+        font-size: 5vw;
+        width: 80%;
+        margin: 6vw;
+    }
+    .generators #randomButton {
+        padding: 5vw;
+        font-size: 4vw;
+    }
+
+}

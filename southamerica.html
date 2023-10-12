@@ -1,0 +1,441 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="southamerica.css">
+        <title>South America</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <section class="navbar">
+            <div class="nav">
+                <img src="globe-icon.png" class=websitelogo>
+                <!-- Navigation Bar when fully expanded -->
+                <ul class="desktopnav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="northamerica.html">North America</a></li>
+                    <li><a href="southamerica.html">South America</a></li>
+                    <li><a href="europe.html">Europe</a></li>
+                    <li><a href="africa.html">Africa</a></li>
+                    <li><a href="asia.html">Asia</a></li>
+                    <li><a href="oceania.html">Oceania</a></li>
+                </ul>
+    
+                <!-- Navigation bar when window is small -->
+                <div class="mobilemenu">
+                    <button class=dropbutton> Continents ▾</button>
+                    <ul class="mobilenav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="northamerica.html">N. America</a></li>
+                        <li><a href="southamerica.html">S. America</a></li>
+                        <li><a href="europe.html">Europe</a></li>
+                        <li><a href="africa.html">Africa</a></li>
+                        <li><a href="asia.html">Asia</a></li>
+                        <li><a href="oceania.html">Oceania</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!--Background/Title -->
+        <section class="homeimage">
+            <h1 class="title">South America</h1>
+        </section>
+
+        <!-- Popular Searches -->
+        <section class = "popularsearches">
+            <h1 id = "populartitle">Popular Searches</h1>
+            <h1 id = "popularsubtitle">Search for a well-known country by typing its name or scrolling down!</h1>
+            <input type="text" id="myInput" placeholder="Search for names.." onkeyup="myFunction()">
+        
+            <!-- Country Boxes -->
+            <ul class = "countryboxes" id = "myUL">
+                <li id="Argentina" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">Argentina</p>
+                    <p class = "countryinfo">The country produced great football players liker Lionel Messi!</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "Argentinabtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Argentina">Learn More</a></button>
+                    </section>
+                </li>
+
+                <li id="Bolivia" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">Bolivia</p>
+                    <p class = "countryinfo">La Paz is the world's highest capital city by elevation at 11,975 feet!</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "Boliviabtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Bolivia">Learn More</a></button>
+                    </section>
+                </li>
+
+                <li id="Brazil" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">Brazil</p>
+                    <p class = "countryinfo">About 60% of the Amazon Rainforest lies within the Brazilian borders!</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "Brazilbtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Brazil">Learn More</a></button>
+                    </section>
+                </li>
+
+                <li id="Chile" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">Chile</p>
+                    <p class = "countryinfo">Easter Island, famous for the giant Moai statues, is located in Chile!</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "Chilebtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Chile">Learn More</a></button>
+                    </section>
+                </li>
+
+                <li id="Colombia" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">Colombia</p>
+                    <p class = "countryinfo">Colombia is known for producing some of the best emeralds in the world!</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "Colombiabtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Colombia">Learn More</a></button>
+                    </section>
+                </li>
+
+                <li id="Ecuador" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">Ecuador</p>
+                    <p class = "countryinfo">Since the equator passes through it, Ecuador was named after it!</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "Ecuadorbtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Ecuador">Learn More</a></button>
+                    </section>
+                </li>
+
+                <li id="Guyana" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">Guyana</p>
+                    <p class = "countryinfo">The world's tallest single-drop waterfall, Kaieteur Falls, is in Guyana!</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "Guyanabtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Guyana">Learn More</a></button>
+                    </section>
+                </li>
+
+                <li id="Paraguay" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">Paraguay</p>
+                    <p class = "countryinfo">Paraguay is sometimes called the 'Heart of South America'!</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "Paraguaybtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Paraguay">Learn More</a></button>
+                    </section>
+                </li>
+
+                <li id="Peru" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">Peru</p>
+                    <p class = "countryinfo">The country was once home to the ancient Incan Empire and houses Machu Picchu!</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "Perubtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Peru">Learn More</a></button>
+                    </section>
+                </li>
+
+                <li id="Suriname" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">Suriname</p>
+                    <p class = "countryinfo">Religious tolerance and harmony are staples in Suriname!</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "Surinamebtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Suriname">Learn More</a></button>
+                    </section>
+                </li>
+
+                <li id="Uruguay" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">Uruguay</p>
+                    <p class = "countryinfo">Uruguay was the first country to legalise recreational cannabis.</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "Uruguaybtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Uruguay">Learn More</a></button>
+                    </section>
+                </li>
+
+                <li id="Venezuela" class="countrybox">
+                    <div class="countryphotos"></div>
+                    <p class="countryname">Venezuela</p>
+                    <p class = "countryinfo">Venezuela houses Angel Falls, the world's highest uninterrupted waterfall!</p>
+                    <section class="buttons">
+                        <button class="quicklearn" id = "Venezuelabtn">Quick Learn</button>
+                        <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Venezuela">Learn More</a></button>
+                    </section>
+                </li>
+            </ul>
+
+            <section class = "modal" id = "ArgentinaModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://www.kayak.com/Brasilia.17187.guide https://en.wikipedia.org/wiki/Flag_of_Brazil</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>Argentina: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: Southern America</il>
+                            <li>Capital City: Buenos Aires</li>
+                            <li>Population: 45,808,747</li>
+                            <li>Common Language(s): Spanish</li>
+                            <li>Religions/Beliefs: Christianity, No Religion</li>
+                        </ul>
+                        <p class = "modalparagraph">Argentina transitioned to democracy in the 1980s after a period of military rule and has since grappled with economic challenges like inflation and debt. However, it remains one of South America's largest economies today from their beef and wine exports. Meanwhile, their culture thrives with the country's love for soccer that is well known and unites the nation.</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class = "modal" id = "BoliviaModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://www.purecharity.com/montero-bolivia-bo18c/updates https://vectorflags.com/bolivia/bo-square-01?ref=more-country-flag</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>Bolivia: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: Central South America</il>
+                            <li>Capital City: La Paz, Sucre</li>
+                            <li>Population: 12,079,472</li>
+                            <li>Common Language(s): Spanish, Quechua, Aymara, etc</li>
+                            <li>Religions/Beliefs: Christianity</li>
+                        </ul>
+                        <p class = "modalparagraph">Bolivia is a landlocked country. Its economy is characterized significant mineral resources like natural gas, but also faces challenges related to poverty and income inequality. Interestingly, its historical narrative is marked by the ancient Inca civilization, political shifts, and social movements, culminating in the election of its first Indigenous president, Evo Morales, in 2006.</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class = "modal" id = "BrazilModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://www.kayak.com/Brasilia.17187.guide https://en.wikipedia.org/wiki/Flag_of_Brazil</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>Brazil: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: Eastern South America</il>
+                            <li>Capital City: Brasília</li>
+                            <li>Population: 214,326,223</li>
+                            <li>Common Language(s): Portuguese</li>
+                            <li>Religions/Beliefs: Christianity, No Religion</li>
+                        </ul>
+                        <p class = "modalparagraph">Brazil is known for its soccer passion and iconic Carnival celebrations. It boasts one of the world's largest economies, driven by agriculture, manufacturing, and natural resources, though it grapples with economic challenges and inequality. Politically, Brazil is a republic with a history of democratic transitions, but recent years have seen political polarization and concerns over environmental policies related to the Amazon Rainforest.</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class = "modal" id = "ChileModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://news.artnet.com/art-world/rapa-nui-easter-island-study-demise-1772814 https://vectorflags.com/chile/cl-square-01</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>Chile: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: Western South America</il>
+                            <li>Capital City: Santiago</li>
+                            <li>Population: 172,683</li>
+                            <li>Common Language(s): Spanish</li>
+                            <li>Religions/Beliefs: Christianity, No Religion</li>
+                        </ul>
+                        <p class = "modalparagraph">Chile is a long, narrow country on the western edge of South America. This nation boasts a stable and open economy, driven by copper exports, a strong wine industry, and a growing tourism sector. Also, folk music traditions like the cueca and a passion for football (soccer) are staples in Chilean culture. Meanwhile, its history is marked by a transition from military rule to democracy in the late 20th century.</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class = "modal" id = "ColombiaModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://www.planetware.com/tourist-attractions/colombia-col.htm https://vectorflags.com/colombia/co-square-01</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>Colombia: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: Northern South America</il>
+                            <li>Capital City: Bogotá</li>
+                            <li>Population: 51,516,562</li>
+                            <li>Common Language(s): Spanish</li>
+                            <li>Religions/Beliefs: Christianity, No Religion</li>
+                        </ul>
+                        <p class = "modalparagraph">Colombia's economy includes things like agriculture and mining, and it has emerged as a popular destination for tourism and coffee exports. Notably, its culture is a mix of indigenous, African, and Spanish influences, celebrated through festivals such as Carnaval de Barranquilla. While Colombia has faced challenges such as political conflict and drug-related violence in the past, it has made significant strides toward peace and development in recent years.</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class = "modal" id = "EcuadorModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://www.amazingdestinations.be/ecuador-reizen/sjamanen-en-toverdrankjes-in-het-amazonewoud https://vectorflags.com/ecuador/ec-square-01</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>Ecuador: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: Northern South America</il>
+                            <li>Capital City: Quito</li>
+                            <li>Population: 17,797,737</li>
+                            <li>Common Language(s): Spanish, Quechua, Schuar, etc</li>
+                            <li>Religions/Beliefs: Christianity</li>
+                        </ul>
+                        <p class = "modalparagraph">Ecuador's economy is fueled by oil exports and tourism, but has an emphasis on preserving its unique ecosystems. Ecuadorian culture comes from indigenous, mestizo, and Spanish traditions due to the nation's history with the Incan Empire, Spanish colonization, and a struggle for independence. More recently, Ecuador has been recognized for its progressive stance on environmental conservation and indigenous rights.</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class = "modal" id = "GuyanaModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://www.heartmybackpack.com/guyana/guyana-travel-best-places-to-visit/ https://vectorflags.com/guyana/gy-square-01?ref=more-region-flag</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>Guyana: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: Northern South America</il>
+                            <li>Capital City: Georgetown</li>
+                            <li>Population: 804,567</li>
+                            <li>Common Language(s): English, Guyanese Creole</li>
+                            <li>Religions/Beliefs: Christianity, Hinduism</li>
+                        </ul>
+                        <p class = "modalparagraph">The country's economy relies on industries like mining and petroleum, with significant reserves of oil. Guyanese culture reflects African, Indian, European, and Indigenous traditions due to its history is marked by Dutch and British colonial periods. However, they were one of the few countries to grow despite the pandemic. Guyana is also known for its pristine rainforests and the mighty Kaieteur Falls, one of the world's tallest single-drop waterfalls.</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class = "modal" id = "ParaguayModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://www.journeylatinamerica.com/destinations/paraguay/places-to-visit/ https://vectorflags.com/paraguay/py-square-01?ref=more-region-flag</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>Paraguay: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: Central South America</il>
+                            <li>Capital City: Asunción</li>
+                            <li>Population: 6,811,297</li>
+                            <li>Common Language(s): Spanish, Guarani</li>
+                            <li>Religions/Beliefs: Christianity</li>
+                        </ul>
+                        <p class = "modalparagraph">Paraguay is a landlocked country known for its Guarani heritage and stable economy. Agriculture, especially soybeans, plays a key role in its economy with the country being the 6th largest producer of soybeans. Paraguayan culture is a blend of Indigenous, Spanish, and Jesuit influences, mostly due to Indigenous civilizations and Spanish colonization. Today, Paraguay is recognized for the Guarani language and the country being an agricultural hub.</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class = "modal" id = "PeruModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://vectorflags.com/peru/pe-square-01 https://news.artnet.com/art-world/machu-picchu-fault-lines-1662205</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>Peru: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: Western South America</il>
+                            <li>Capital City: Lima</li>
+                            <li>Population: 33,715,471</li>
+                            <li>Common Language(s): Spanish, Quechua, Aymara</li>
+                            <li>Religions/Beliefs: Christianity</li>
+                        </ul>
+                        <p class = "modalparagraph">Peru is a nation with a complex blend of economy and culture. The country relies on mining, agriculture, and tourism, with its diverse geography, including the Amazon Rainforest. Peruvian culture is a rich from Indigenous, Spanish, and African influences, shown in dishes like ceviche. Recently, Peru has experienced political turmoil, including presidential impeachments and struggles for political stability.</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class = "modal" id = "SurinameModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://www.reddit.com/r/Suriname/ https://www.iexplore.com/articles/travel-guides/central-and-south-america/suriname/attractions</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>Suriname: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: Northern South America</il>
+                            <li>Capital City: Paramaribo</li>
+                            <li>Population: 612,985</li>
+                            <li>Common Language(s): Dutch, Sranan Tongo, English</li>
+                            <li>Religions/Beliefs: Christianity, Hinduism, Islam</li>
+                        </ul>
+                        <p class = "modalparagraph">Suriname is a nation characterized by its multicultural society and stable politics. The economy is driven by industries such as mining, oil production, and agriculture. Surinamese culture is a blend of Indigenous, African, Indian, Javanese, and Dutch influences from its history of Dutch colonialism. Today, country has a stable political climate, transitioning to democracy after periods of military rule.</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class = "modal" id = "UruguayModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://www.puentesabroad.com/montevideo-destination https://vectorflags.com/uruguay/uy-square-01</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>Uruguay: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: Southern South America</il>
+                            <li>Capital City: Montevideo</li>
+                            <li>Population: 3,456,750</li>
+                            <li>Common Language(s): Spanish, Uruguayan Sign Language (LSU)</li>
+                            <li>Religions/Beliefs: Christianity, No Religion</li>
+                        </ul>
+                        <p class = "modalparagraph">Uruguay is known for its robust economy and progressive culture. The country's economy relies on agriculture, particularly cattle ranching, and a well-developed services sector. Uruguayan culture reflects a blend of European and Indigenous influences. Politically, Uruguay is recognized for its democratic stability and social welfare programs, making it one of the most politically and socially progressive nations in South America.</p>
+                    </section>
+                </section>
+            </section>
+
+            <section class = "modal" id = "VenezuelaModal">
+                <span class = "closeButton">&times;</span>
+                <section class = "modalbox">
+                    <div class = "modalphoto">
+                        <div class = "photo"></div>
+                        <p class = "caption">Source: https://vectorflags.com/venezuela/ve-square-01?ref=more-region-flag https://www.planetware.com/tourist-attractions/venezuela-ven.htm</p>
+                    </div>
+                    <section class = "modaltext">
+                        <p class = "additionalinfo"><strong>Venezuela: </strong></p>
+                        <ul class = "modalbullets">
+                            <il>Location: Northern South America</il>
+                            <li>Capital City: Caracas</li>
+                            <li>Population: 28,199,867</li>
+                            <li>Common Language(s): Spanish</li>
+                            <li>Religions/Beliefs: Christianity, No Religion</li>
+                        </ul>
+                        <p class = "modalparagraph">Venezuela is culturally rich, with influences from Indigenous, African, and European traditions. However, the country now faces severe economic challenges like hyperinflation and shortages of basic goods due to economic mismanagement and falling oil prices. Politically, Venezuela grapples with a power struggle between the government and opposition, leading to international scrutiny and diplomatic tensions.</p>
+                    </section>
+                </section>
+            </section>
+
+
+        </section>
+
+        <!-- Random Generators -->
+        <section class = "generators">
+            <section class = "randomCountry">
+                <h1>Random Country Generator</h1>
+                <p>Want to start learning but don't know where to begin? No problem! 
+                    Click the button below to show a random country for you to read about!</p>
+                <button id = "randomButton">Show Random Country</button>
+            </section>
+        </section>
+
+        <script src="southamerica.js"></script>
+    </body>
+</html>

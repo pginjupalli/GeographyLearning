@@ -1,0 +1,720 @@
+<html>
+   <head>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="index.js"></script>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <title>Homepage</title>
+   </head>
+
+   <body>
+    <!-- Navigation Bar -->
+    <section class = "navbar">
+        <div class = "nav">
+            <img src = "globe-icon.png" class = websitelogo>
+            <!-- Navigation Bar when fully expanded -->
+            <ul class = "desktopnav">
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "northamerica.html">North America</a></li>
+                <li><a href = "southamerica.html">South America</a></li>
+                <li><a href = "europe.html">Europe</a></li>
+                <li><a href = "africa.html">Africa</a></li>
+                <li><a href = "asia.html">Asia</a></li>
+                <li><a href = "oceania.html">Oceania</a></li>
+            </ul>
+
+            <!-- Navigation bar when window is small -->
+            <div class = "mobilemenu">
+                <button class = dropbutton> Continents ▾</button>
+                <ul class = "mobilenav">
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "northamerica.html">N. America</a></li>
+                    <li><a href = "southamerica.html">S. America</a></li>
+                    <li><a href = "europe.html">Europe</a></li>
+                    <li><a href = "africa.html">Africa</a></li>
+                    <li><a href = "asia.html">Asia</a></li>
+                    <li><a href = "oceania.html">Oceania</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Background/Title -->
+    <section class = "homeimage">
+        <h1 class = "title" >Geography Learning</h1>
+        <h1 class = "subtitle">Learning Made Easy</h1>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class = "intro">
+        <section class = "introimages" id = "ship"></section>
+        <div class = "introtext">
+            <p>Welcome to Geography Learning! Our website is made to teach you about the world! Our home 
+               gets more complicated each day, so our goal is to make it a bit easier to understand.</p>
+            <p>Disclaimer: We currently only have information about countries that are part of the UN.</p>
+        </div>
+        <section class = "introimages" id = "plane"></section>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class = "stats">
+        <div class = "statboxes">
+            <p>There are</p>
+            <p class = "number" id = "countries"><strong>195</strong></p>
+            <p>UN-recognized countries in the world!</p>
+        </div>
+
+        <div class = "statboxes">
+            <p>Approximately</p>
+            <p class = "number"><strong>90%</strong></p>
+            <p>of the people live in the northern hemisphere</p>
+        </div>
+
+        <div class = "statboxes">
+            <p>There are</p>
+            <p class = "number"><strong>8b</strong></p>
+            <p>people living on Earth as of 2023.</p>
+        </div>
+
+        <div class = "statboxes">
+            <p>About</p>
+            <p class = "number"><strong>71%</strong></p>
+            <p>of Earth's surface is covered in water.</p>
+        </div>
+    </section>
+
+    <!-- Popular Searches -->
+    <section class = "popularsearches">
+        <h1 id = "populartitle">Popular Searches</h1>
+        <h1 id = "popularsubtitle">Search for a well-known country by typing its name or scrolling down!</h1>
+        <input type="text" id="myInput" placeholder="Search for names.." onkeyup="myFunction()">
+        
+        <!-- Country Boxes -->
+        <ul class = "countryboxes" id = "myUL">
+            
+            <li id="Australia" class="countrybox">
+                <div class="countryphotos"></div>
+                <p class="countryname">Australia</p>
+                <p class = "countryinfo">Australia holds the world's largest coral reef system, the Great Barrier Reef.</p>
+                <section class="buttons">
+                    <button class="quicklearn" id = "australiabtn">Quick Learn</button>
+                    <button class= "learnmore"><a href = "https://en.wikipedia.org/wiki/Australia">Learn More</a></button>
+                </section>
+            </li>
+
+            <li id="Brazil" class="countrybox">
+                <div class="countryphotos"></div>
+                <p class="countryname">Brazil</p>
+                <p class = "countryinfo">About 60% of the Amazon Rainforest lies within the Brazilian borders!</p>
+                <section class="buttons">
+                    <button class="quicklearn" id = "brazilbtn">Quick Learn</button>
+                    <button class="learnmore"><a href = "https://en.wikipedia.org/wiki/Brazil">Learn More</a></button>
+                </section>
+            </li>
+
+            <li id="Canada" class="countrybox">
+                <div class="countryphotos"></div>
+                <p class="countryname">Canada</p>
+                <p class = "countryinfo">Measuring by land mass, Canada is the second largest country in the world!</p>
+                <section class="buttons">
+                    <button class="quicklearn" id = "canadabtn">Quick Learn</button>
+                    <button class="learnmore"><a href = "https://en.wikipedia.org/wiki/Canada">Learn More</a></button>
+                </section>
+            </li>
+
+            <li id="China" class="countrybox">
+                <div class="countryphotos"></div>
+                <p class="countryname">China</p>
+                <p class = "countryinfo">Until 2023, China had the largest population in the world!</p>
+                <section class="buttons">
+                    <button class="quicklearn" id = "chinabtn">Quick Learn</button>
+                    <button class="learnmore"><a href = "https://en.wikipedia.org/wiki/China">Learn More</a></button>
+                </section>
+            </li>
+
+            <li id="France" class="countrybox">
+                <div class="countryphotos"></div>
+                <p class="countryname">France</p>
+                <p class = "countryinfo">In the European Union (EU), France is the largest country by area!</p>
+                <section class="buttons">
+                    <button class="quicklearn" id = "francebtn">Quick Learn</button>
+                    <button class="learnmore"><a href = "https://en.wikipedia.org/wiki/France">Learn More</a></button>
+                </section>
+            </li>
+
+            <li id="Germany" class="countrybox">
+                <div class="countryphotos"></div>
+                <p class="countryname">Germany</p>
+                <p class = "countryinfo">Germany holds more than 20,000 castles within its borders!</p>
+                <section class="buttons">
+                    <button class="quicklearn" id = "germanybtn">Quick Learn</button>
+                    <button class="learnmore"><a href = "https://en.wikipedia.org/wiki/Germany">Learn More</a></button>
+                </section>
+            </li>
+
+            <li id="India" class="countrybox">
+                <div class="countryphotos"></div>
+                <p class="countryname">India</p>
+                <p class = "countryinfo">While Hindi and English are popular languages, India uses 20+ languages!</p>
+                <section class="buttons">
+                    <button class="quicklearn" id = "indiabtn">Quick Learn</button>
+                    <button class="learnmore"><a href = "https://en.wikipedia.org/wiki/India">Learn More</a></button>
+                </section>
+            </li>
+
+            <li id="Italy" class="countrybox">
+                <div class="countryphotos"></div>
+                <p class="countryname">Italy</p>
+                <p class = "countryinfo">Italy holds the most World Heritage Sites, surpassing China!</p>
+                <section class="buttons">
+                    <button class="quicklearn" id = "Italybtn">Quick Learn</button>
+                    <button class="learnmore"><a href = "https://en.wikipedia.org/wiki/Italy">Learn More</a></button>
+                </section>
+            </li>
+
+            <li id="Japan" class="countrybox">
+                <div class="countryphotos"></div>
+                <p class="countryname">Japan</p>
+                <p class = "countryinfo">Japan is one the most densely populated countries with its mountainous geography.</p>
+                <section class="buttons">
+                    <button class="quicklearn" id = "Japanbtn">Quick Learn</button>
+                    <button class="learnmore"><a href = "https://en.wikipedia.org/wiki/Japan">Learn More</a></button>
+                </section>
+            </li>
+
+            <li id="Mexico" class="countrybox">
+                <div class="countryphotos"></div>
+                <p class="countryname">Mexico</p>
+                <p class = "countryinfo">Mexico has been the origin of many famous artists like Frida Kahlo and Diego Rivera.</p>
+                <section class="buttons">
+                    <button class="quicklearn" id = "Mexicobtn">Quick Learn</button>
+                    <button class="learnmore"><a href = "https://en.wikipedia.org/wiki/Mexico">Learn More</a></button>
+                </section>
+            </li>
+
+            <li id="Nigeria" class="countrybox">
+                <div class="countryphotos"></div>
+                <p class="countryname">Nigeria</p>
+                <p class = "countryinfo">Nigeria has the largest economy in Africa and is referred as the 'Giant of Africa'.</p>
+                <section class="buttons">
+                    <button class="quicklearn" id = "Nigeriabtn">Quick Learn</button>
+                    <button class="learnmore"><a href = "https://en.wikipedia.org/wiki/Nigeria">Learn More</a></button>
+                </section>
+            </li>
+
+            <li id="Pakistan" class="countrybox">
+                <div class="countryphotos"></div>
+                <p class="countryname">Pakistan</p>
+                <p class = "countryinfo">The Attari-Wagah ceremony happens daily between Pakistan and India to show mutual respect.</p>
+                <section class="buttons">
+                    <button class="quicklearn" id = "Pakistanbtn">Quick Learn</button>
+                    <button class="learnmore"><a href = "https://en.wikipedia.org/wiki/Pakistan">Learn More</a></button>
+                </section>
+            </li>
+
+            <li id="Russia" class="countrybox">
+                <div class="countryphotos"></div>
+                <p class="countryname">Russia</p>
+                <p class = "countryinfo">Russia is the largest country in the world by area, having 11 time zones.</p>
+                <section class="buttons">
+                    <button class="quicklearn" id = "Russiabtn">Quick Learn</button>
+                    <button class="learnmore"><a href = "https://en.wikipedia.org/wiki/Russia">Learn More</a></button>
+                </section>
+            </li>
+
+            <li id="SouthAfrica" class="countrybox">
+                <div class="countryphotos"></div>
+                <p class="countryname">South Africa</p>
+                <p class = "countryinfo">South Africa is the only African nation to legalize same-sex marriages.</p>
+                <section class="buttons">
+                    <button class="quicklearn" id = "SouthAfricabtn">Quick Learn</button>
+                    <button class="learnmore"><a href = "https://en.wikipedia.org/wiki/South_Africa">Learn More</a></button>
+                </section>
+            </li>
+
+            <li id="SK" class="countrybox">
+                <div class="countryphotos"></div>
+                <p class="countryname">South Korea</p>
+                <p class = "countryinfo">Almost a 1/5 of the country's population lives in the capital city, Seoul.</p>
+                <section class="buttons">
+                    <button class="quicklearn" id = "SKbtn">Quick Learn</button>
+                    <button class="learnmore"><a href = "https://en.wikipedia.org/wiki/South_Korea">Learn More</a></button>
+                </section>
+            </li>
+
+            <li id="Spain" class="countrybox">
+                <div class="countryphotos"></div>
+                <p class="countryname">Spain</p>
+                <p class = "countryinfo">The Spanish market, Mercat Central, is the largest fresh produce market in Europe.</p>
+                <section class="buttons">
+                    <button class="quicklearn" id = "Spainbtn">Quick Learn</button>
+                    <button class="learnmore"><a href = "https://en.wikipedia.org/wiki/Spain">Learn More</a></button>
+                </section>
+            </li>
+
+            <li id="Ukraine" class="countrybox">
+                <div class="countryphotos"></div>
+                <p class="countryname">Ukraine</p>
+                <p class = "countryinfo">From being a major grain producer, Ukraine is called the 'Bread Basket of Europe'.</p>
+                <section class="buttons">
+                    <button class="quicklearn" id = "Ukrainebtn">Quick Learn</button>
+                    <button class="learnmore"><a href = "https://en.wikipedia.org/wiki/Ukraine">Learn More</a></button>
+                </section>
+            </li>
+
+            <li id="UK" class="countrybox">
+                <div class="countryphotos"></div>
+                <p class="countryname">United Kingdom</p>
+                <p class = "countryinfo">The countries of the UK have their own governments with varying power.</p>
+                <section class="buttons">
+                    <button class="quicklearn" id = "UKbtn">Quick Learn</button>
+                    <button class="learnmore"><a href = "https://en.wikipedia.org/wiki/United_Kingdom">Learn More</a></button>
+                </section>
+            </li>
+
+            <li id="USA" class="countrybox">
+                <div class="countryphotos"></div>
+                <p class="countryname">USA</p>
+                <p class = "countryinfo">The USA posesses the world's largest GDP, making up 1/4 of the global GDP.</p>
+                <section class="buttons">
+                    <button class="quicklearn" id = "USAbtn">Quick Learn</button>
+                    <button class="learnmore"><a href = "https://en.wikipedia.org/wiki/USA">Learn More</a></button>
+                </section>
+            </li>
+        </ul>
+
+        <!-- Country Modals -->
+        <section class = "modal" id = "AustraliaModal">
+            <span class = "closeButton">&times;</span>
+            <section class = "modalbox">
+                <div class = "modalphoto">
+                    <div class = "photo"></div>
+                    <p class = "caption">Source: https://www.wallpaperflare.com/australia-sydney-sydney-opera-house-view-blue-sky-harbour-wallpaper-epgfo 
+                        https://www.anbg.gov.au/oz/flag.html</p>
+                </div>
+                <section class = "modaltext">
+                    <p class = "additionalinfo"><strong>Australia: </strong></p>
+                    <ul class = "modalbullets">
+                        <il>Location: Southeastern Oceania</il>
+                        <li>Capital City: Canberra</li>
+                        <li>Population: 25,978,935</li>
+                        <li>Common Language(s): English</li>
+                        <li>Religions/Beliefs: Christianity, No Religion</li>
+                    </ul>
+                    <p class = "modalparagraph">Australia embraces a multicultural society, reflecting its rich indigenous heritage and waves of immigration. The nation boasts a strong and stable economy driven by industries such as mining, agriculture, and services, while being a global leader in mineral resources. Politically, it operates as a federal parliamentary constitutional monarchy, with a robust democratic system characterized by a two-party system.</p>
+                </section>
+            </section>
+        </section>
+
+        <section class = "modal" id = "BrazilModal">
+            <span class = "closeButton">&times;</span>
+            <section class = "modalbox">
+                <div class = "modalphoto">
+                    <div class = "photo"></div>
+                    <p class = "caption">Source: https://www.kayak.com/Brasilia.17187.guide
+                        https://en.wikipedia.org/wiki/Flag_of_Brazil</p>
+                </div>
+                <section class = "modaltext">
+                    <p class = "additionalinfo"><strong>Brazil: </strong></p>
+                    <ul class = "modalbullets">
+                        <il>Location: Eastern South America</il>
+                        <li>Capital City: Brasilia</li>
+                        <li>Population: 214,326,223</li>
+                        <li>Common Language(s): Portuguese</li>
+                        <li>Religions/Beliefs: Christianity, No Religion</li>
+                    </ul>
+                    <p class = "modalparagraph">Brazil is known for its soccer passion and iconic Carnival celebrations. It boasts one of the world's largest economies, driven by agriculture, manufacturing, and natural resources, though it grapples with economic challenges and inequality. Politically, Brazil is a republic with a history of democratic transitions, but recent years have seen political polarization and concerns over environmental policies related to the Amazon Rainforest.</p>
+                </section>
+            </section>
+        </section>
+
+        <section class = "modal" id = "CanadaModal">
+            <span class = "closeButton">&times;</span>
+            <section class = "modalbox">
+                <div class = "modalphoto">
+                    <div class = "photo"></div>
+                    <p class = "caption">Source: https://www.railbookers.com/trips/classic-canada-coast-to-coast-eastbound 
+                        https://www.britannica.com/topic/flag-of-Canada</p>
+                </div>
+                <section class = "modaltext">
+                    <p class = "additionalinfo"><strong>Canada: </strong></p>
+                    <ul class = "modalbullets">
+                        <il>Location: Northern America</il>
+                        <li>Capital City: Ottawa</li>
+                        <li>Population: 38,246,108</li>
+                        <li>Common Language(s): English, French</li>
+                        <li>Religions/Beliefs: Christianity, No Religion</li>
+                    </ul>
+                    <p class = "modalparagraph">Canada boasts a multicultural society, reflected in its inclusive culture, indigenous heritage, and vibrant arts scene. Economically, Canada is known for its natural resources, including oil, minerals, and timber, while its banking sector and technology industry contribute significantly to its economy. In politics, Canada operates as a parliamentary democracy and constitutional monarchy, promoting political stability and social welfare.
+                    </p>
+                </section>
+            </section>
+        </section>
+
+        <section class = "modal" id = "ChinaModal">
+            <span class = "closeButton">&times;</span>
+            <section class = "modalbox">
+                <div class = "modalphoto">
+                    <div class = "photo"></div>
+                    <p class = "caption">Source: https://commons.wikimedia.org/wiki/File:Shanghai_skyline_waterfront_pudong_5166168_69_70.jpg
+                         https://www.hiclipart.com/free-transparent-background-png-clipart-dtych</p>
+                </div>
+                <section class = "modaltext">
+                    <p class = "additionalinfo"><strong>China: </strong></p>
+                    <ul class = "modalbullets">
+                        <il>Location: East Asia</il>
+                        <li>Capital City: Beijing</li>
+                        <li>Population: 1,407,563,842</li>
+                        <li>Common Language(s): Mandarin, Mongolian, etc</li>
+                        <li>Religions/Beliefs: No Religion, Buddhism</li>
+                    </ul>
+                    <p class = "modalparagraph">China has a heritage shaped over thousands of years, with Confucianism, Taoism, and Buddhism influencing its philosophy and art. Economically, China has evolved into the world's second-largest economy, driven by manufacturing, technology, and international trade. Politically, China operates under a single-party system, with the Chinese Communist Party exerting strong control.</p>
+                </section>
+            </section>
+        </section>
+
+        <section class = "modal" id = "FranceModal">
+            <span class = "closeButton">&times;</span>
+            <section class = "modalbox">
+                <div class = "modalphoto">
+                    <div class = "photo"></div>
+                    <p class = "caption">Source: https://www.kimkim.com/c/france-in-november-travel-tips-weather-more https://flagsexpress.com/france-flag/</p>
+                </div>
+                <section class = "modaltext">
+                    <p class = "additionalinfo"><strong>France: </strong></p>
+                    <ul class = "modalbullets">
+                        <il>Location: Western Europe</il>
+                        <li>Capital City: Paris</li>
+                        <li>Population: 67,749,632</li>
+                        <li>Common Language(s): French</li>
+                        <li>Religions/Beliefs: Christianity, No Religion</li>
+                    </ul>
+                    <p class = "modalparagraph">France boasts an influential cultural heritage, known for its art, fashion, and historical contributions to literature and philosophy. Its economy is one of the largest in the world, with diverse sectors such as aerospace, agriculture, and luxury goods. Politically, France operates as a semi-presidential republic, characterized with multiple political parties, and it plays a significant role in global affairs as a permanent member of the United Nations Security Council.</p>
+                </section>
+            </section>
+        </section>
+
+        <section class = "modal" id = "GermanyModal">
+            <span class = "closeButton">&times;</span>
+            <section class = "modalbox">
+                <div class = "modalphoto">
+                    <div class = "photo"></div>
+                    <p class = "caption">Source: https://www.kimkim.com/c/germany-in-january-travel-tips-weather-more 
+                        https://customflagsaustralia.com.au/product/germany-flag/
+                    </p>
+                </div>
+                <section class = "modaltext">
+                    <p class = "additionalinfo"><strong>Germany: </strong></p>
+                    <ul class = "modalbullets">
+                        <il>Location: Central Europe</il>
+                        <li>Capital City: Berlin</li>
+                        <li>Population: 83,149,300</li>
+                        <li>Common Language(s): German</li>
+                        <li>Religions/Beliefs: Christianity</li>
+                    </ul>
+                    <p class = "modalparagraph">Germany boasts a cultural heritage with contributions to music, literature, and science. It is renowned for its composers like Beethoven and Bach. Meanwhile, Germany is a global economic powerhouse, known for manufacturing and its commitment to innovation. Politically, Germany is a federal parliamentary republic with a multi-party system, characterized by stability and emphasis on social welfare. Overall, it plays a pivotal role in the European Union.</p>
+                </section>
+            </section>
+        </section>
+
+        <section class = "modal" id = "IndiaModal">
+            <span class = "closeButton">&times;</span>
+            <section class = "modalbox">
+                <div class = "modalphoto">
+                    <div class = "photo"></div>
+                    <p class = "caption">Source: https://en.wikipedia.org/wiki/Charminar https://flaglane.com/download/indian-flag/
+                    </p>
+                </div>
+                <section class = "modaltext">
+                    <p class = "additionalinfo"><strong>India: </strong></p>
+                    <ul class = "modalbullets">
+                        <il>Location: South Asia</il>
+                        <li>Capital City: New Delhi</li>
+                        <li>Population: 1,412,360,000</li>
+                        <li>Common Language(s): Hindi, Telugu, Tamil, Marathi, etc</li>
+                        <li>Religions/Beliefs: Hinduism</li>
+                    </ul>
+                    <p class = "modalparagraph">India boasts a rich and multifaceted culture shaped by millennia of history, with a multitude of languages, religions, and traditions coexisting. In fact, North Indian culture is very different from South Indian culture. Meanwhile, the Indian economy has experienced significant growth, driven by sectors such as IT and manufacturing. Politically, India is a robust democracy with a dynamic political landscape, characterized by an array of political parties and ideologies.</p>
+                </section>
+            </section>
+        </section>
+
+        <section class = "modal" id = "ItalyModal">
+            <span class = "closeButton">&times;</span>
+            <section class = "modalbox">
+                <div class = "modalphoto">
+                    <div class = "photo"></div>
+                    <p class = "caption">Source: https://www.travelandleisure.com/most-beautiful-places-in-italy-7109087 https://www.istockphoto.com/vector/italy-flag-gm166053218-23478286
+                    </p>
+                </div>
+                <section class = "modaltext">
+                    <p class = "additionalinfo"><strong>Italy: </strong></p>
+                    <ul class = "modalbullets">
+                        <il>Location: Southern Europe</il>
+                        <li>Capital City: Rome</li>
+                        <li>Population: 59,109,668</li>
+                        <li>Common Language(s): Italian</li>
+                        <li>Religions/Beliefs: Christianity</li>
+                    </ul>
+                    <p class = "modalparagraph">Italy boasts an influential cultural heritage that has shaped art, cuisine, and architecture worldwide. Its economy is diverse, with thriving industries in design, agriculture, and tourism, although their public debt is high. Politically, Italy is a parliamentary republic with a history of frequent government changes and coalition politics, reflecting its complex political landscape. It plays a significant role in the EU and is known for its influence in global affairs.</p>
+                </section>
+            </section>
+        </section>
+
+        <section class = "modal" id = "JapanModal">
+            <span class = "closeButton">&times;</span>
+            <section class = "modalbox">
+                <div class = "modalphoto">
+                    <div class = "photo"></div>
+                    <p class = "caption">Source: https://en.japantravel.com/tokyo/shibuya-crossing/3016 https://flagsexpress.com/japan-flag/
+                    </p>
+                </div>
+                <section class = "modaltext">
+                    <p class = "additionalinfo"><strong>Japan: </strong></p>
+                    <ul class = "modalbullets">
+                        <il>Location: Eastern Asia</il>
+                        <li>Capital City: Tokyo</li>
+                        <li>Population: 125,681,593</li>
+                        <li>Common Language(s): Japanese</li>
+                        <li>Religions/Beliefs: Shinto, Buddhism</li>
+                    </ul>
+                    <p class = "modalparagraph">Japan boasts a culture that seamlessly blends ancient traditions with modern innovation, reflected in tea ceremonies, arts like ikebana and kabuki, and a respect for nature. The Japanese economy is one of the world's largest, driven by industries like automotive manufacturing, electronics, and robotics, while the nation's political landscape features a constitutional monarchy with a parliamentary government, marked by stability and a commitment to pacifism.</p>
+                </section>
+            </section>
+        </section>
+
+        <section class = "modal" id = "MexicoModal">
+            <span class = "closeButton">&times;</span>
+            <section class = "modalbox">
+                <div class = "modalphoto">
+                    <div class = "photo"></div>
+                    <p class = "caption">Source: fodors.com/world/mexico-and-central-america/mexico/mexico-city/experiences/news/photos/20-ultimate-things-to-do-in-mexico-city wikipedia.org
+                    </p>
+                </div>
+                <section class = "modaltext">
+                    <p class = "additionalinfo"><strong>Mexico: </strong></p>
+                    <ul class = "modalbullets">
+                        <il>Location: Central America</il>
+                        <li>Capital City: Mexico City</li>
+                        <li>Population: 126,705,138</li>
+                        <li>Common Language(s): Spanish</li>
+                        <li>Religions/Beliefs: Christianity</li>
+                    </ul>
+                    <p class = "modalparagraph">Mexico is influenced by indigenous civilizations, Spanish colonization, and a fusion of traditions, celebrated through festivals like Dia de los Muertos. Economically, Mexico is an emerging powerhouse, with a manufacturing sector and a growing technology industry, but grapples with income inequality and corruption. In politics, Mexico operates as a federal republic, with a history of political shifts, marked by the 2018 election of President Andrés Manuel López Obrador.</p>
+                </section>
+            </section>
+        </section>
+
+        <section class = "modal" id = "NigeriaModal">
+            <span class = "closeButton">&times;</span>
+            <section class = "modalbox">
+                <div class = "modalphoto">
+                    <div class = "photo"></div>
+                    <p class = "caption">Source: https://en.wikipedia.org/wiki/Lagos https://www.istockphoto.com/vector/nigeria-gm652740802-118607525
+                    </p>
+                </div>
+                <section class = "modaltext">
+                    <p class = "additionalinfo"><strong>Nigeria: </strong></p>
+                    <ul class = "modalbullets">
+                        <il>Location: Western Africa</il>
+                        <li>Capital City: Abuja</li>
+                        <li>Population: 211,400,708</li>
+                        <li>Common Language(s): English, Hausa, Igbo, Yoruba, etc</li>
+                        <li>Religions/Beliefs: Islam, Christianity</li>
+                    </ul>
+                    <p class = "modalparagraph">Nigeria is a nation of diverse cultures, with over 250 ethnic groups and languages, contributing to a vibrant landscape. Economically, Nigeria is Africa's largest economy, with oil production as a major revenue source, though economic diversification and poverty remains a challenge. Politically, Nigeria is a federal republic, and President Muhammadu Buhari has led the country since 2015. However, it is said to be one of the more corrupted nations in the world.</p>
+                </section>
+            </section>
+        </section>
+
+        <section class = "modal" id = "PakistanModal">
+            <span class = "closeButton">&times;</span>
+            <section class = "modalbox">
+                <div class = "modalphoto">
+                    <div class = "photo"></div>
+                    <p class = "caption">Source: https://statemag.state.gov/2022/11/1122pom/ https://www.istockphoto.com/photos/pakistani-flag
+                    </p>
+                </div>
+                <section class = "modaltext">
+                    <p class = "additionalinfo"><strong>Pakistan: </strong></p>
+                    <ul class = "modalbullets">
+                        <il>Location: South Asia</il>
+                        <li>Capital City: Islamabad</li>
+                        <li>Population: 241,499,431</li>
+                        <li>Common Language(s): Urdu, English, etc</li>
+                        <li>Religions/Beliefs: Islam</li>
+                    </ul>
+                    <p class = "modalparagraph">Pakistan boasts a diverse culture shaped by a blend of various ethnic groups, languages, and religious traditions. Economically, Pakistan has a mixed economy with agriculture, manufacturing, and services sectors, though it faces challenges such as fiscal deficits. Politically, the country has experienced periods of civilian and military rule, striving for political stability and democratic governance, amid regional and global geopolitical complexities.</p>
+                </section>
+            </section>
+        </section>
+
+        <section class = "modal" id = "RussiaModal">
+            <span class = "closeButton">&times;</span>
+            <section class = "modalbox">
+                <div class = "modalphoto">
+                    <div class = "photo"></div>
+                    <p class = "caption">Source: https://www.corinthia.com/st-petersburg/discover-st-petersburg/top-10-things-to-see-in-the-hermitage-collection/ https://stock.adobe.com/search?k=russia+flag
+                    </p>
+                </div>
+                <section class = "modaltext">
+                    <p class = "additionalinfo"><strong>Russia: </strong></p>
+                    <ul class = "modalbullets">
+                        <il>Location: Southeastern Europe</il>
+                        <li>Capital City: Moscow</li>
+                        <li>Population: 143,449,286</li>
+                        <li>Common Language(s): Russian</li>
+                        <li>Religions/Beliefs: Christianity, No Religion</li>
+                    </ul>
+                    <p class = "modalparagraph">Russia has a rich culture spanning centuries, from the classical works of Tolstoy and Dostoevsky to its renowned ballet. Its economy is characterized by a mix of state control and market-oriented sectors, with strengths in energy and heavy industry, while grappling with issues like corruption. Politically, Russia operates as a federal semi-presidential republic, led by Vladimir Putin, and is known for its centralized authority and restrictions on political dissent.</p>
+                </section>
+            </section>
+        </section>
+
+        <section class = "modal" id = "SouthAfricaModal">
+            <span class = "closeButton">&times;</span>
+            <section class = "modalbox">
+                <div class = "modalphoto">
+                    <div class = "photo"></div>
+                    <p class = "caption">Source: https://www.easemytrip.com/blog/places-to-visit-in-south-africa https://www.pinterest.com/pin/flag-of-south-africa--232428030760337619/
+                    </p>
+                </div>
+                <section class = "modaltext">
+                    <p class = "additionalinfo"><strong>South Africa: </strong></p>
+                    <ul class = "modalbullets">
+                        <il>Location: Southern Africa</il>
+                        <li>Capital City: Pretoria (Executive), Cape Town (Legislative), Bloemfontein (Judicial)</li>
+                        <li>Population: 60,142,978</li>
+                        <li>Common Language(s): Afrikaans, English, Ndebele, etc</li>
+                        <li>Religions/Beliefs: Christianity</li>
+                    </ul>
+                    <p class = "modalparagraph">South Africa is renowned for its culture, especially with literature and the visual arts. Economically, South Africa boasts one of the continent's most developed economies, with sectors like mining and finance, though it grapples with unemployment. Politically, South Africa has a history of overcoming apartheid through the leadership of Nelson Mandela. Right now, the nation is navigating political and social challenges while upholding the principles of democracy.</p>
+                </section>
+            </section>
+        </section>
+
+        <section class = "modal" id = "SKModal">
+            <span class = "closeButton">&times;</span>
+            <section class = "modalbox">
+                <div class = "modalphoto">
+                    <div class = "photo"></div>
+                    <p class = "caption">Source: https://www.sweetescape.com/en/cities/nami-island https://www.istockphoto.com/search/2/image-film?phrase=south+korean+flag
+                    </p>
+                </div>
+                <section class = "modaltext">
+                    <p class = "additionalinfo"><strong>South Korea: </strong></p>
+                    <ul class = "modalbullets">
+                        <il>Location: Eastern Asia</il>
+                        <li>Capital City: Seoul</li>
+                        <li>Population: 51,744,876</li>
+                        <li>Common Language(s): Korean</li>
+                        <li>Religions/Beliefs: Buddhism, No Religion, etc</li>
+                    </ul>
+                    <p class = "modalparagraph">South Korea is deeply influenced by Confucianism, Buddhism, and a long history marked by dynasties. Its culture is celebrated through traditions like kimchi-making and an appreciation for ancient art. Economically, South Korea has become an economic powerhouse known for technology giants like Samsung and Hyundai. Politically, South Korea operates as a democratic republic with a complex political landscape, marked by regular elections and regional tensions.</p>
+                </section>
+            </section>
+        </section>
+
+        <section class = "modal" id = "SpainModal">
+            <span class = "closeButton">&times;</span>
+            <section class = "modalbox">
+                <div class = "modalphoto">
+                    <div class = "photo"></div>
+                    <p class = "caption">Source: https://www.travelandleisure.com/valencia-spain-how-to-visit-7495304 https://starspangledflags.com/flag/spain/
+                    </p>
+                </div>
+                <section class = "modaltext">
+                    <p class = "additionalinfo"><strong>Spain: </strong></p>
+                    <ul class = "modalbullets">
+                        <il>Location: Western Europe</il>
+                        <li>Capital City: Madrid</li>
+                        <li>Population: 47,415,750</li>
+                        <li>Common Language(s): Spanish</li>
+                        <li>Religions/Beliefs: Christianity, No Religion</li>
+                    </ul>
+                    <p class = "modalparagraph">Spain boasts a rich and diverse cultural heritage influenced by its history of Moorish, Roman, and Celtic civilizations, evident in its flamenco music and world-renowned cuisine. Its economy is one of the largest in the EU, characterized by tourism, manufacturing, and agriculture. Politically, Spain is a constitutional monarchy with a parliamentary system, marked by regional autonomy and debates over issues such as Catalonia's quest for independence.</p>
+                </section>
+            </section>
+        </section>
+        
+        <section class = "modal" id = "UkraineModal">
+            <span class="closeButton">&times;</span>
+            <section class="modalbox">
+                <div class="modalphoto">
+                    <div class="photo"></div>
+                    <p class="caption">Source: https://www.flickr.com/photos/franganillo/50389500452 https://starspangledflags.com/flag/ukraine/
+                    </p>
+                </div>
+                <section class="modaltext">
+                    <p class="additionalinfo"><strong>Ukraine: </strong></p>
+                    <ul class="modalbullets">
+                        <il>Location: Eastern Europe</il>
+                        <li>Capital City: Kyiv</li>
+                        <li>Population: 43,792,855</li>
+                        <li>Common Language(s): Ukrainian</li>
+                        <li>Religions/Beliefs: Christianity</li>
+                    </ul>
+                    <p class="modalparagraph">Ukraine is influenced by its Slavic traditions and historical ties to Byzantine, Polish, and Russian civilizations, evident in its literature and art. Its economy is diverse, with strengths in agriculture, heavy industry, and technology, but it grapples with corruption. Politically, Ukraine is a parliamentary republic marked by its complex relationship with Russia and a history of political turmoil. The country continues to navigate towards European integration.</p>
+                </section>
+            </section>
+        </section>
+
+        <section class = "modal" id = "UKModal">
+            <span class="closeButton">&times;</span>
+            <section class="modalbox">
+                <div class="modalphoto">
+                    <div class="photo"></div>
+                    <p class="caption">Source: https://www.historic-uk.com/Blog/Top-10-Historical-Sites-in-the-UK/ https://www.istockphoto.com/vector/uk-flag-united-kingdom-flag-gm1211686337-351488053
+                    </p>
+                </div>
+                <section class="modaltext">
+                    <p class="additionalinfo"><strong>United Kingdom: </strong></p>
+                    <ul class="modalbullets">
+                        <il>Location: Northwestern Europe</il>
+                        <li>Capital City: London</li>
+                        <li>Population: 67,326,569</li>
+                        <li>Common Language(s): English, Welsh, Scottish Gaelic, Irish</li>
+                        <li>Religions/Beliefs: No Religion, Christianity</li>
+                    </ul>
+                    <p class="modalparagraph">The United Kingdom, comprising England, Scotland, Wales, and Northern Ireland, is shaped by centuries of history. Its economy is one of the largest in the world, driven by financial services, manufacturing, and technology, though challenges related to Brexit persist. Politically, the UK is a constitutional monarchy with a parliamentary system, marked by debates over its relationship with the EU and Scottish independence.</p>
+                </section>
+            </section>
+        </section>
+
+        <section class = "modal" id = "USAModal">
+            <span class="closeButton">&times;</span>
+            <section class="modalbox">
+                <div class="modalphoto">
+                    <div class="photo"></div>
+                    <p class="caption">Source: https://en.wikipedia.org/wiki/Cloud_Gate https://www.istockphoto.com/search/2/image-film?mediatype=illustration&phrase=american+flag+isolated
+                    </p>
+                </div>
+                <section class="modaltext">
+                    <p class="additionalinfo"><strong>United States of America: </strong></p>
+                    <ul class="modalbullets">
+                        <il>Location: Northern America</il>
+                        <li>Capital City: Washington D.C.</li>
+                        <li>Population: 331,893,745</li>
+                        <li>Common Language(s): English</li>
+                        <li>Religions/Beliefs: Christianity, No Religion</li>
+                    </ul>
+                    <p class="modalparagraph">The United States is multicultural society shaped by a blend of Native American, European, African, and immigrant influences. Economically, the U.S. stands as the world's largest economy, with a diverse mix of industries including technology, finance, agriculture, and manufacturing. In politics, the U.S. operates as a federal republic with a democratic system, marked by a two-party political landscape and an emphasis on individual liberties.</p>
+                </section>
+            </section>
+        </section>
+
+    </section>
+
+    <!-- Random Generators -->
+    <section class = "generators">
+        <section class = "randomCountry">
+            <h1>Random Country Generator</h1>
+            <p>Want to start learning but don't know where to begin? No problem! 
+                Click the button below to show a random country for you to read about!</p>
+            <button id = "randomButton">Show Random Country</button>
+        </section>
+    </section>
+
+
+    <script src="index.js"></script>
+   </body>
+</html>

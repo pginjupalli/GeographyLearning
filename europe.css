@@ -1,0 +1,1153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.navbar .nav .websitelogo {
+    margin-right: auto;
+    width: 40px;
+    height: 40px;
+}
+
+.navbar {
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: rgb(246, 241, 255);
+    position: fixed;
+    top: 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+    width: 100%;
+}
+.nav {
+    display: flex;
+    background-color: rgb(246, 241, 255);
+    align-items: center;
+}
+
+ .navbar .nav .desktopnav {
+    list-style-type: none;
+    width: 100%; 
+    padding-left: 10px;
+}
+
+.navbar .nav .desktopnav li {
+    display: inline;
+    padding: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar .nav li:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(205, 179, 255);
+    text-underline-offset: 5px;
+    text-decoration-thickness: 4px;
+    transition: 0.5s;
+}
+
+.navbar .nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .nav .dropbutton {
+    display: none;
+    margin-left: auto;
+    width: 110px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    background-color: rgb(246, 241, 255);
+    font-size: 16px;
+}
+
+.navbar .nav .dropbutton:hover {
+    background-color: rgb(230, 216, 255);
+    transition: 0.5s;
+}
+
+.navbar .nav .mobilemenu .mobilenav {
+    display: none;
+    min-width: 110px;
+    z-index: 1px;
+    background-color: rgb(246, 241, 255);
+    position: absolute;
+
+}
+
+.navbar .nav .mobilemenu:hover .mobilenav{
+    display: block;
+}
+
+.navbar .nav .mobilemenu .mobilenav li {
+    list-style-type: none;
+    padding: 10px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 18px;
+    margin-left: auto;
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar .nav a {
+    cursor: pointer;
+}
+
+.homeimage {
+    background-image: url("backgrounds/europebackground.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    object-fit: cover;
+}
+
+.homeimage h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    text-shadow: black 4px 5px;
+    font-size: 9vw;
+}
+
+/* Popular Searches Header --------------------------------------------------------------------------------------------*/
+.popularsearches {
+    width: 100%;
+    background-color: rgb(252, 250, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-top: 5px solid rgb(120, 73, 154);
+}
+
+.popularsearches #myInput {
+  background-image: url("search_icon.png");
+  background-size: 1.2vw  1.2vw;
+  background-position: 10px 12px; 
+  background-repeat: no-repeat; 
+  width: 50%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px; 
+  border: 1px solid #ddd; 
+  margin-bottom: 12px; 
+  margin-top: 12px;
+}
+
+.popularsearches #populartitle {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal;
+    font-size: 6vw;
+    padding-top: 3vw;
+}
+
+.popularsearches #popularsubtitle {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    font-size: 1.5vw;
+    padding-top: 0.5vw;
+    padding-bottom: 1.5vw;
+    width: 50%;
+    text-align: center;
+}
+
+/*Country Boxes ------------------------------------------------------------------------------------------*/
+.popularsearches .countryboxes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.popularsearches .countryboxes .countrybox {
+    border: 10px solid rgb(120, 73, 154);
+    border-radius: 5px;
+    margin: 20px;
+    
+}
+
+.popularsearches .countryboxes .countrybox:hover {
+    box-shadow: 0px 0px 12px 0 rgba(0,0,0,.8);
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.popularsearches .countryboxes .countrybox .countryphotos {
+    width: 300px;
+    height: 300px;
+}
+
+.popularsearches .countryphotos {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.popularsearches .countryboxes .countrybox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(247, 236, 255);
+}
+
+.popularsearches .countryboxes .countrybox .countryinfo {
+    width: 260px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.popularsearches .countryboxes .countrybox .countryname {
+    padding-top: 10px;
+    font-size: 32px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: underline solid rgb(142, 76, 189);
+}
+
+.popularsearches .countryboxes #Bosnia .countryname{
+    font-size: 28px;
+    padding-bottom: 6px;
+}
+
+.popularsearches .countryboxes .countrybox button {
+    margin: 15px;
+    margin-top: 0;
+    border: none;
+    width: 90px;
+    height: 35px;
+    background-color: rgb(120, 73, 154);
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.popularsearches a {
+    text-decoration: underline white;
+    color: white;
+}
+
+/* Modal Designs -----------------------------------------------------------------------------------------------------------------------*/
+.modal {
+    display: none;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.modal .modalbox {
+    display: flex;
+    flex-direction: row;
+    margin: 10% 19.5% auto;
+    position: fixed;
+    width: 60%;
+    height: 60%;
+    background-color: rgb(249, 240, 255);
+    border: 10px solid rgb(120, 73, 154);
+    border-radius: 5px;
+    animation-name: modalopen;
+    animation-duration: 1s;
+
+}
+
+@keyframes modalopen {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.modal .modalbox .modalphoto {
+    width: 92%;
+    height: 90%;
+    margin: 2vw;
+}
+
+.modal .modalbox .modalphoto .photo {
+    width: 100%;
+    height: 80%;
+    border: 5px solid rgb(120, 73, 154);
+    background-size: cover;
+}
+
+.modal .modalbox .modalphoto .caption {
+    margin: 10px;
+    color: gray;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.modal .modalbox .modaltext {
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 27px;
+    margin: 30px;
+    margin-left: 7px;
+    text-align: center;
+    width: 70%;
+}
+
+.modal .modalbox .modaltext .modalparagraph {
+    margin-top: 20px;
+}
+
+.modal .closeButton {
+    float: right;
+    font-size: 50px;
+    color: white;
+    padding-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+/* Searches Photos + Hovers -------------------------------------------------------------------------*/
+.popularsearches #Albania .countryphotos {
+    background-image: url(europeimages/albaniasite.jpg);
+}
+.popularsearches #Albania .countryphotos:hover {
+    background-image: url(europeimages/albaniaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Andorra .countryphotos {
+    background-image: url(europeimages/andorrasite.jpg);
+}
+.popularsearches #Andorra .countryphotos:hover {
+    background-image: url(europeimages/andorraflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Austria .countryphotos {
+    background-image: url(europeimages/austriasite.jpg);
+}
+.popularsearches #Austria .countryphotos:hover {
+    background-image: url(europeimages/austriaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Belarus .countryphotos {
+    background-image: url(europeimages/belarussite.jpg);
+}
+.popularsearches #Belarus .countryphotos:hover {
+    background-image: url(europeimages/belarusflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Belgium .countryphotos {
+    background-image: url(europeimages/belgiumsite.jpeg);
+}
+.popularsearches #Belgium .countryphotos:hover {
+    background-image: url(europeimages/belgiumflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Bosnia .countryphotos {
+    background-image: url(europeimages/bosniasite.jpg);
+}
+.popularsearches #Bosnia .countryphotos:hover {
+    background-image: url(europeimages/bosniaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Bulgaria .countryphotos {
+    background-image: url(europeimages/bulgariasite.jpg);
+}
+.popularsearches #Bulgaria .countryphotos:hover {
+    background-image: url(europeimages/bulgariaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Croatia .countryphotos {
+    background-image: url(europeimages/croatiasite.jpg);
+}
+.popularsearches #Croatia .countryphotos:hover {
+    background-image: url(europeimages/croatiaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Cyprus .countryphotos {
+    background-image: url(europeimages/cyprussite.jpg);
+}
+.popularsearches #Cyprus .countryphotos:hover {
+    background-image: url(europeimages/cyprusflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Czech .countryphotos {
+    background-image: url(europeimages/czechsite.jpg);
+}
+.popularsearches #Czech .countryphotos:hover {
+    background-image: url(europeimages/czechflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Denmark .countryphotos {
+    background-image: url(europeimages/denmarksite.jpg);
+}
+.popularsearches #Denmark .countryphotos:hover {
+    background-image: url(europeimages/denmarkflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Estonia .countryphotos {
+    background-image: url(europeimages/estoniasite.jpeg);
+}
+.popularsearches #Estonia .countryphotos:hover {
+    background-image: url(europeimages/estoniaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Finland .countryphotos {
+    background-image: url(europeimages/finlandsite.jpeg);
+}
+.popularsearches #Finland .countryphotos:hover {
+    background-image: url(europeimages/finlandflag.png);
+    transition: 1s;
+}
+
+.popularsearches #France .countryphotos {
+    background-image: url(europeimages/francesite.jpg);
+}
+.popularsearches #France .countryphotos:hover {
+    background-image: url(europeimages/franceflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Greece .countryphotos {
+    background-image: url(europeimages/greecesite.jpg);
+}
+.popularsearches #Greece .countryphotos:hover {
+    background-image: url(europeimages/greeceflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Germany .countryphotos {
+    background-image: url(europeimages/germanysite.jpg);
+}
+.popularsearches #Germany .countryphotos:hover {
+    background-image: url(europeimages/germanyflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Hungary .countryphotos {
+    background-image: url(europeimages/hungarysite.jpg);
+}
+.popularsearches #Hungary .countryphotos:hover {
+    background-image: url(europeimages/hungaryflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Iceland .countryphotos {
+    background-image: url(europeimages/icelandsite.jpg);
+}
+.popularsearches #Iceland .countryphotos:hover {
+    background-image: url(europeimages/icelandflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Ireland .countryphotos {
+    background-image: url(europeimages/irelandsite.jpg);
+}
+.popularsearches #Ireland .countryphotos:hover {
+    background-image: url(europeimages/irelandflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Italy .countryphotos {
+    background-image: url(europeimages/italysite.jpg);
+}
+.popularsearches #Italy .countryphotos:hover {
+    background-image: url(europeimages/italyflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Latvia .countryphotos {
+    background-image: url(europeimages/latviasite.jpg);
+}
+.popularsearches #Latvia .countryphotos:hover {
+    background-image: url(europeimages/latviaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Lithuania .countryphotos {
+    background-image: url(europeimages/lithuaniasite.jpeg);
+}
+.popularsearches #Lithuania .countryphotos:hover {
+    background-image: url(europeimages/lithuaniaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Liechtenstein .countryphotos {
+    background-image: url(europeimages/liechtensteinsite.jpg);
+}
+.popularsearches #Liechtenstein .countryphotos:hover {
+    background-image: url(europeimages/liechtensteinflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Luxembourg .countryphotos {
+    background-image: url(europeimages/luxembourgsite.jpg);
+}
+.popularsearches #Luxembourg .countryphotos:hover {
+    background-image: url(europeimages/luxembourg.png);
+    transition: 1s;
+}
+
+.popularsearches #Malta .countryphotos {
+    background-image: url(europeimages/maltasite.jpg);
+}
+.popularsearches #Malta .countryphotos:hover {
+    background-image: url(europeimages/maltaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Moldova .countryphotos {
+    background-image: url(europeimages/moldovasite.jpg);
+}
+.popularsearches #Moldova .countryphotos:hover {
+    background-image: url(europeimages/moldovaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Monaco .countryphotos {
+    background-image: url(europeimages/monacosite.jpg);
+}
+.popularsearches #Monaco .countryphotos:hover {
+    background-image: url(europeimages/monacoflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Montenegro .countryphotos {
+    background-image: url(europeimages/montenegrosite.jpg);
+}
+.popularsearches #Montenegro .countryphotos:hover {
+    background-image: url(europeimages/montenegroflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Netherlands .countryphotos {
+    background-image: url(europeimages/netherlandssite.jpg);
+}
+.popularsearches #Netherlands .countryphotos:hover {
+    background-image: url(europeimages/netherlandsflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Macedonia .countryphotos {
+    background-image: url(europeimages/macedoniasite.jpg);
+}
+.popularsearches #Macedonia .countryphotos:hover {
+    background-image: url(europeimages/macedoniaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Norway .countryphotos {
+    background-image: url(europeimages/norwaysite.jpg);
+}
+.popularsearches #Norway .countryphotos:hover {
+    background-image: url(europeimages/norwayflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Poland .countryphotos {
+    background-image: url(europeimages/polandsite.jpg);
+}
+.popularsearches #Poland .countryphotos:hover {
+    background-image: url(europeimages/polandflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Portugal .countryphotos {
+    background-image: url(europeimages/portugalsite.jpg);
+}
+.popularsearches #Portugal .countryphotos:hover {
+    background-image: url(europeimages/portugalflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Russia .countryphotos {
+    background-image: url(asiaimages/russiasite.jpg);
+}
+.popularsearches #Russia .countryphotos:hover {
+    background-image: url(asiaimages/russiaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Romania .countryphotos {
+    background-image: url(europeimages/romaniasite.jpeg);
+}
+.popularsearches #Romania .countryphotos:hover {
+    background-image: url(europeimages/romaniaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #SanMarino .countryphotos {
+    background-image: url(europeimages/sanmarinosite.jpeg);
+}
+.popularsearches #SanMarino .countryphotos:hover {
+    background-image: url(europeimages/sanmarinoflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Serbia .countryphotos {
+    background-image: url(europeimages/serbiasite.jpg);
+}
+.popularsearches #Serbia .countryphotos:hover {
+    background-image: url(europeimages/serbiaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Slovakia .countryphotos {
+    background-image: url(europeimages/slovakiasite.jpg);
+}
+.popularsearches #Slovakia .countryphotos:hover {
+    background-image: url(europeimages/slovakiaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Slovenia .countryphotos {
+    background-image: url(europeimages/sloveniasite.jpg);
+}
+.popularsearches #Slovenia .countryphotos:hover {
+    background-image: url(europeimages/sloveniaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Spain .countryphotos {
+    background-image: url(europeimages/spainsite.jpg);
+}
+.popularsearches #Spain .countryphotos:hover {
+    background-image: url(europeimages/spainflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Sweden .countryphotos {
+    background-image: url(europeimages/swedensite.jpg);
+}
+.popularsearches #Sweden .countryphotos:hover {
+    background-image: url(europeimages/swedenflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Switzerland .countryphotos {
+    background-image: url(europeimages/switzerlandsite.jpg);
+}
+.popularsearches #Switzerland .countryphotos:hover {
+    background-image: url(europeimages/switzerlandflag.png);
+    transition: 1s;
+}
+
+.popularsearches #Ukraine .countryphotos {
+    background-image: url(europeimages/ukrainesite.jpg);
+}
+.popularsearches #Ukraine .countryphotos:hover {
+    background-image: url(europeimages/ukraineflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #UnitedKingdom .countryphotos {
+    background-image: url(europeimages/uksite.jpg);
+}
+.popularsearches #UnitedKingdom .countryphotos:hover {
+    background-image: url(europeimages/ukflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #Vatican .countryphotos {
+    background-image: url(europeimages/vaticansite.jpeg);
+}
+.popularsearches #Vatican .countryphotos:hover {
+    background-image: url(europeimages/vaticanflag.png);
+    transition: 1s;
+}
+
+/* Modal Images */
+.popularsearches #AlbaniaModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/albaniasite.jpg);
+}
+.popularsearches #AlbaniaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/albaniaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #AndorraModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/andorrasite.jpg);
+}
+.popularsearches #AndorraModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/andorraflag.png);
+    transition: 1s;
+}
+
+.popularsearches #AustriaModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/austriasite.jpg);
+}
+.popularsearches #AustriaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/austriaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #BelarusModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/belarussite.jpg);
+}
+.popularsearches #BelarusModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/belarusflag.png);
+    transition: 1s;
+}
+
+.popularsearches #BelgiumModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/belgiumsite.jpeg);
+}
+.popularsearches #BelgiumModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/belgiumflag.png);
+    transition: 1s;
+}
+
+.popularsearches #BosniaModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/bosniasite.jpg);
+}
+.popularsearches #BosniaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/bosniaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #BulgariaModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/bulgariasite.jpg);
+}
+.popularsearches #BulgariaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/bulgariaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #CroatiaModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/croatiasite.jpg);
+}
+.popularsearches #CroatiaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/croatiaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #CyprusModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/cyprussite.jpg);
+}
+.popularsearches #CyprusModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/cyprusflag.png);
+    transition: 1s;
+}
+
+.popularsearches #CzechModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/czechsite.jpg);
+}
+.popularsearches #CzechModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/czechflag.png);
+    transition: 1s;
+}
+
+.popularsearches #DenmarkModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/denmarksite.jpg);
+}
+.popularsearches #DenmarkModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/denmarkflag.png);
+    transition: 1s;
+}
+
+.popularsearches #EstoniaModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/estoniasite.jpeg);
+}
+.popularsearches #EstoniaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/estoniaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #FinlandModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/finlandsite.jpeg);
+}
+.popularsearches #FinlandModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/finlandflag.png);
+    transition: 1s;
+}
+
+.popularsearches #FranceModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/francesite.jpg);
+}
+.popularsearches #FranceModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/franceflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #GermanyModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/germanysite.jpg);
+}
+.popularsearches #GermanyModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/germanyflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #GreeceModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/greecesite.jpg);
+}
+.popularsearches #GreeceModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/greeceflag.png);
+    transition: 1s;
+}
+
+.popularsearches #HungaryModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/hungarysite.jpg);
+}
+.popularsearches #HungaryModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/hungaryflag.png);
+    transition: 1s;
+}
+
+.popularsearches #IcelandModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/icelandsite.jpg);
+}
+.popularsearches #IcelandModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/icelandflag.png);
+    transition: 1s;
+}
+
+.popularsearches #IrelandModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/irelandsite.jpg);
+}
+.popularsearches #IrelandModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/irelandflag.png);
+    transition: 1s;
+}
+
+.popularsearches #ItalyModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/italysite.jpg);
+}
+.popularsearches #ItalyModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/italyflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #LatviaModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/latviasite.jpg);
+}
+.popularsearches #LatviaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/latviaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #LiechtensteinModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/liechtensteinsite.jpg);
+}
+.popularsearches #LiechtensteinModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/liechtensteinflag.png);
+    transition: 1s;
+}
+
+.popularsearches #LithuaniaModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/lithuaniasite.jpeg);
+}
+.popularsearches #LithuaniaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/lithuaniaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #LuxembourgModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/luxembourgsite.jpg);
+}
+.popularsearches #LuxembourgModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/luxembourg.png);
+    transition: 1s;
+}
+
+.popularsearches #MaltaModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/maltasite.jpg);
+}
+.popularsearches #MaltaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/maltaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #MoldovaModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/moldovasite.jpg);
+}
+.popularsearches #MoldovaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/moldovaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #MonacoModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/monacosite.jpg);
+}
+.popularsearches #MonacoModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/monacoflag.png);
+    transition: 1s;
+}
+
+.popularsearches #MontenegroModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/montenegrosite.jpg);
+}
+.popularsearches #MontenegroModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/montenegroflag.png);
+    transition: 1s;
+}
+
+.popularsearches #NetherlandsModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/netherlandssite.jpg);
+}
+.popularsearches #NetherlandsModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/netherlandsflag.png);
+    transition: 1s;
+}
+
+.popularsearches #MacedoniaModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/macedoniasite.jpg);
+}
+.popularsearches #MacedoniaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/macedoniaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #NorwayModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/norwaysite.jpg);
+}
+.popularsearches #NorwayModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/norwayflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #PolandModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/polandsite.jpg);
+}
+.popularsearches #PolandModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/polandflag.png);
+    transition: 1s;
+}
+
+.popularsearches #PortugalModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/portugalsite.jpg);
+}
+.popularsearches #PortugalModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/portugalflag.png);
+    transition: 1s;
+}
+
+.popularsearches #RomaniaModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/romaniasite.jpeg);
+}
+.popularsearches #RomaniaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/romaniaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #RussiaModal .modalbox .modalphoto .photo {
+    background-image: url(asiaimages/russiasite.jpg);
+}
+.popularsearches #RussiaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(asiaimages/russiaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #SanMarinoModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/sanmarinosite.jpeg);
+}
+.popularsearches #SanMarinoModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/sanmarinoflag.png);
+    transition: 1s;
+}
+
+.popularsearches #SerbiaModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/serbiasite.jpg);
+}
+.popularsearches #SerbiaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/serbiaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #SlovakiaModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/slovakiasite.jpg);
+}
+.popularsearches #SlovakiaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/slovakiaflag.png);
+    transition: 1s;
+}
+
+.popularsearches #SloveniaModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/sloveniasite.jpg);
+}
+.popularsearches #SloveniaModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/sloveniaflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #SpainModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/spainsite.jpg);
+}
+.popularsearches #SpainModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/spainflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #SwedenModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/swedensite.jpg);
+}
+.popularsearches #SwedenModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/swedenflag.png);
+    transition: 1s;
+}
+
+.popularsearches #SwitzerlandModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/switzerlandsite.jpg);
+}
+.popularsearches #SwitzerlandModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/switzerlandflag.png);
+    transition: 1s;
+}
+
+.popularsearches #UkraineModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/ukrainesite.jpg);
+}
+.popularsearches #UkraineModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/ukraineflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #UnitedKingdomModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/uksite.jpg);
+}
+.popularsearches #UnitedKingdomModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/ukflag.jpg);
+    transition: 1s;
+}
+
+.popularsearches #VaticanModal .modalbox .modalphoto .photo {
+    background-image: url(europeimages/vaticansite.jpeg);
+}
+.popularsearches #VaticanModal .modalbox .modalphoto .photo:hover {
+    background-image: url(europeimages/vaticanflag.png);
+    transition: 1s;
+}
+
+/*Random Generator Design*/
+.generators {
+    background-color: rgb(209, 168, 238);
+    box-shadow: 
+        inset 0px 11px 8px -6px rgb(146, 95, 182),
+        inset 0px -11px 8px -6px rgb(146, 95, 182); 
+    border-bottom: 5px solid rgb(120, 73, 154);
+    border-top: 5px solid rgb(120, 73, 154);
+}
+
+.generators .randomCountry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.generators h1 {
+    font-size: 3vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline solid rgb(142, 76, 189);
+    text-align: center;
+}
+
+.generators p {
+    font-size: 1.5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 40%;
+    text-align: center;
+    margin: 1.5vw;
+}
+
+.generators #randomButton {
+    border: none;
+    padding: 1.4vw;
+    color: black;
+    background-color: rgb(249, 240, 255);
+    font-size: 1.3vw;
+    border-radius: 7px;
+}
+
+.generators #randomButton:hover {
+    background-color: rgb(246, 232, 255);
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .navbar .nav .desktopnav {
+        display: none;
+    }
+    .navbar .nav .mobilemenu .dropbutton {
+        display: block;
+        margin-right: 15px;
+    }
+
+    .homeimage {
+        width: 100%;
+        height: 300px;
+    }
+    .homeimage .title {
+        text-shadow: black 2px 3px;
+    }
+
+    .popularsearches #populartitle {
+        font-size: 7vw;
+    }
+    .popularsearches #popularsubtitle {
+        font-size: 3vw;
+    }
+
+    .modal .modalbox {
+        flex-direction: column;
+        width: 80%;
+        height: 90%;
+        margin: 11% 8% auto;
+    }
+
+    .modal .modalbox .modalphoto {
+        height: 50%;
+        margin-bottom: 10px;
+    }
+
+    .modal .modalbox .modaltext {
+        margin-top: 0;
+        font-size: 13px;
+        line-height: 18px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+    .modal .modalbox .modalphoto .caption {
+        margin: 5px;
+        color: gray;
+        font-style: italic;
+        font-size: 9px;
+    }
+
+    .generators {
+        flex-direction: column;
+    }
+    .generators h1 {
+        font-size: 7vw;
+    }
+    .generators p {
+        font-size: 5vw;
+        width: 80%;
+        margin: 6vw;
+    }
+    .generators #randomButton {
+        padding: 5vw;
+        font-size: 4vw;
+    }
+
+}
